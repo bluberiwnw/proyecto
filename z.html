@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zonas Turísticas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Great+Vibes&family=Monsieur+La+Doulaise&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Great+Vibes&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+   
+  <div class="logo img-fluid" style="text-align: left;">
+        <a href="index.html"><img src="images/tupuebla.jpeg" alt="Logo Puebla"></a>
+      </div>
+
+    <header>
+        <div class="container py-3">
+            <nav class="navbar navbar-expand-lg navbar dark" >
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#zonasb">Más buscado</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#zonasr">Recomendado</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Más...
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#museos">Museos</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#iglesias">Iglesias</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#pueblosm">Pueblos Mágicos</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                      </li> 
+                    </ul>
+                    <button id="btnSearch" class="btn btn-light">
+                      <i class="fas fa-search"></i>
+                      </button>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <div id="cont-bars-search">
+      <div class="container">
+        <input type="text" id="inputSearch" class="form-control form-control-lg rounded-pill" placeholder="Buscar...">
+      </div>
+    </div>
+    
+    <ul id="box-search" class="list-group"  style="top: 170px;; max-width: 800px; width: 90%">
+      <li class="list-group-item"><a href="h.html"><i class="fas fa-search me-2"></i>Hoteles</a></li>
+      <li class="list-group-item"><a href="m.html"><i class="fas fa-search me-2"></i>Mercados artesanales</a></li>
+      <li class="list-group-item"><a href="z.html"><i class="fas fa-search me-2"></i>Zonas turísticas</a></li>
+      <li class="list-group-item"><a href="g.html"><i class="fas fa-search me-2"></i>Gastronomía</a></li>
+      <li class="list-group-item"><a href="#contacto"><i class="fas fa-search me-2"></i>Contacto</a></li>
+      <li id="no-results" class="list-group-item text-center text-muted" style="display: none;">
+        <i class="fas fa-exclamation-circle me-2"></i>No hay resultados</li>    
+    </ul>
+    
+    <div id="cover-ctn-search"></div>
+    
+    <h1 class="m-0 p-0">Zonas Turísticas</h1>
+
+    <nav class="m-0 p-0" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+      <ol class="breadcrumb m-0 p-0">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Zonas Turísticas</li>
+      </ol>
+    </nav>
+
+    <section class="container my-1">
+      <div class="row align-items-center">
+        
+        <div class="col-md-3 mb-4 mb-md-0">
+          <p style="color: black; font-family: Dancing Script, cursive; font-weight: 900; font-size: 20px;">
+            El estado de Puebla ofrece una riqueza cultural e histórica única. El Centro Histórico de Puebla es un tesoro arquitectónico con sus calles empedradas. Entre sus zonas más emblemáticas también se encuentra el Acuario Michìn, la Iglesia de San Francisco o el Museo del Alfeñique de Puebla, que ofrece vistas espectaculares de la ciudad. Para quienes desean salir de la ciudad, lugares como Cholula con su gran pirámide, y Cuetzalan con su clima templado, son destinos cercanos ideales.
+          </p>
+        </div>
+    
+        <div class="col-md-9">
+          <div id="carouselHoteles" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4 overflow-hidden shadow">
+              <div class="carousel-item active">
+                <img src="images/mus.jpg" class="d-block w-100" alt="Hotel 1" style="height: 400px; object-fit: cover;">
+              </div>
+              <div class="carousel-item">
+                <img src="images/a1.avif" class="d-block w-100" alt="Hotel 2" style="height: 400px; object-fit: cover;">
+              </div>
+              <div class="carousel-item">
+                <img src="images/i2.jpg" class="d-block w-100" alt="Hotel 3" style="height: 400px; object-fit: cover;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHoteles" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHoteles" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+      <div class="section-title" id="zonasb">Más buscado</div>
+      <div class="zona-container position-relative">
+        <div class="zona-scroll d-flex overflow-auto flex-nowrap p-2">
+
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/m10.jpg" class="card-img-top" alt="">
+            <div class="card-body d-flex flex-column">
+              <h6>Museo Regional Casa del Alfeñique</h6>
+              <p class="fs-6">El Museo Regional Casa de Alfeñique, también conocido como la Casa de Alfeñique, es un museo fundado en 1926 y ubicado en la ciudad de Puebla, México. Se caracteriza por su arquitectura barroca y es considerado el primer museo de la ciudad.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#museoAlfModal">Ver Más</a>
+              <div class="modal fade" id="museoAlfModal" tabindex="-1" aria-labelledby="museoAlfLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="museoAlf">Museo Regional Casa del Alfeñique</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselmuseoAlf" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/museo alf/m5.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo alf/m2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo alf/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo alf/m1.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoAlf" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoAlf" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>La construcción de la casa data del siglo XVIII y es obra de Antonio de Santa María Incháurregui, quien utilizó argamasa, petatillo y mayólica. Según la leyenda popular, el inmueble fue construido como un regalo de bodas para una novia que había pedido "una casa de alfeñique", un tipo de caramelo procedente de España común en México durante la época colonial.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.014131148106!2d-98.19475341034179!3d19.04503896931781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e5e128eb19%3A0x802a227657dc0c31!2sMuseo%20Casa%20de%20Alfe%C3%B1ique!5e1!3m2!1ses-419!2smx!4v1745654642626!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Calle 4 Oriente No. 416, Centro Histórico, Puebla, Pue.</p>
+                            <p><strong>Horario:</strong> Martes a Domingo de 10:00 a 17:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/m1.png" class="card-img-top" alt="Museo Amparo">
+            <div class="card-body d-flex flex-column">
+              <h6>Museo Amparo</h6>
+              <p class="fs-6">El Museo Amparo, ubicado en el centro histórico de la ciudad de Puebla, es una institución privada creada en memoria de Amparo Rugarcía de Espinosa y Iglesias, esposa del banquero y filántropo mexicano Manuel Espinosa Yglesias, a través de la Fundación Amparo por iniciativa de su hija Ángeles Espinosa y Iglesias Rugarcía.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#museoAmpModal">Ver Más</a>
+              <div class="modal fade" id="museoAmpModal" tabindex="-1" aria-labelledby="museoAmpLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="museoAmp">Museo Amparo</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselmuseoAmp" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/museo am/m.png" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo am/m2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo am/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo am/m4.png" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoAmp" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoAmp" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>Su finalidad es conservar, investigar, exhibir y divulgar el arte prehispánico, virreinal, moderno y contemporáneo de México. El 28 de febrero de 1991 el Museo Amparo abrió por primera vez sus puertas, desde entonces exhibe gran parte de su Colección de Arte Prehispánico, Arte Virreinal y siglo XIX y Arte Contemporáneo, ofreciendo a la par una amplia agenda de exposiciones temporales, nacionales e internacionales, sumando a éstas diversidad de actividades lúdicas, creativas, educativas y de investigación.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.8744888181486!2d-98.20102022604986!3d19.040931553075005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e80ee17c7d%3A0x81b13f9dfc55a353!2sMuseo%20Amparo!5e1!3m2!1ses-419!2smx!4v1745746411327!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Calle 2 Sur No. 708, Centro Histórico, Puebla, Pue.</p>
+                            <p><strong>Horario:</strong> Miércoles a Lunes de 10:00 a 18:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>  
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/i1.png" class="card-img-top" alt="Catedral de Puebla">
+            <div class="card-body d-flex flex-column">
+              <h6>Catedral de Puebla</h6>
+              <p class="fs-6">La Catedral de Puebla, también conocida como Catedral Metropolitana de Puebla, es un edificio emblemático de la ciudad de Puebla, México. Su construcción comenzó en 1575 por orden del rey Felipe II de España. El templo fue consagrado en 1649, aunque aún no estaba completamente terminado, ya que las torres Norte y Sur se añadieron posteriormente, en 1678 y 1768, respectivamente.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#catModal">Ver Más</a>
+              <div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="cat">Catedral de Puebla</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselcat" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/cat/c.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/cat/c1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/cat/c2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/cat/c3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselcat" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselcat" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>La catedral es de estilo herreriano, con una arquitectura que combina elementos barrocos tardíos con toques neoclásicos. Su fachada presenta columnas dóricas y corintias, y su estructura es de cruz latina con cinco naves. El retablo principal es octogonal, con otros cuatro retablos orientados a los puntos cardinales, y el complejo incluye catorce capillas en diversos estilos, cada una con numerosas obras artísticas.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.8392240697294!2d-98.20090402604986!3d19.042895453013408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6280aa50887%3A0x5b21261581c701c5!2sCatedral%20de%20Nuestra%20Se%C3%B1ora%20de%20la%20Inmaculada%20Concepci%C3%B3n%20de%20Puebla!5e1!3m2!1ses-419!2smx!4v1745746878889!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> C. 16 de Septiembre s/n, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong>  Todos los días de 8:00 a 20:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                     
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/a.webp" class="card-img-top" alt="Acuario Michin">
+            <div class="card-body  d-flex flex-column">
+              <h6>Acuario Michín</h6>
+              <p class="fs-6">El Acuario Michin Puebla es uno de los acuarios más importantes y modernos de México, ubicado en el Sótano 2 del Centro Comercial Parque Puebla. Este acuario ofrece una experiencia interactiva y divertida para toda la familia, donde se pueden observar especies marinas como peces, tiburones, medusas, tortugas, mantarrayas, ajolotes y nutrias, entre otras.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#acuarModal">Ver Más</a>
+              <div class="modal fade" id="acuarModal" tabindex="-1" aria-labelledby="acuarabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="museoAlf">Acuario Michín</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselacuar" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/acuar/a2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/acuar/a1.avif" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/acuar/a.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/acuar/a3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselacuar" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselacuar" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>El recinto alberga 300 especies distintas y más de 20 mil ejemplares, convirtiéndolo en un lugar de recreación que combina naturaleza, conservación y educación. El Acuario Michin Puebla cuenta con seis pabellones y un Laboratorio Michin, donde los visitantes pueden participar en actividades educativas y recreativas. Además, ofrece atracciones como puentes colgantes, tirolesa, trampolines y la Granja Achcalli, donde se puede alimentar a capibaras y otros animales.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.3735986174047!2d-98.17546912604915!3d19.06880795220071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc129b553b551%3A0x9f9c4c2ff6abfd19!2sAcuario%20Michin%20Puebla!5e1!3m2!1ses-419!2smx!4v1745805487545!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Parque Puebla, Calz. Ignacio Zaragoza local C, Corredor Industrial la Ciénega, 72220 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong>  Lunes a Domingo de 10 a 21 hrs.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/m2.png" class="card-img-top" alt="Museo del Barroco">
+            <div class="card-body d-flex flex-column">
+              <h6>Museo del Barroco</h6>
+              <p class="fs-6">El Museo Internacional del Barroco (MIB) es un museo de arte barroco ubicado en Puebla de Zaragoza, Puebla, México. Fue diseñado por el arquitecto japonés Toyo Itō y inaugurado el 4 de febrero de 2016.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#museoBarModal">Ver Más</a>
+              <div class="modal fade" id="museoBarModal" tabindex="-1" aria-labelledby="museoBarLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="museoBar">Museo del Barroco</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselmuseoBar" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/museo bar/m1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo bar/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo bar/m2.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo bar/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoBar" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoBar" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>Este museo tiene como objetivo crear diálogos entre el arte del pasado y el contemporáneo, entre lo barroco y el neobarroco, a través de museografía interactiva y exposiciones temporales que permiten reflexionar sobre los lenguajes propios del barroco. El MIB es un espacio único que ofrece una visión internacional del estilo barroco, con piezas provenientes de diversos países. La arquitectura del museo es muy peculiar, con paredes blancas que lo hacen atractivo y distintivo.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.014131148106!2d-98.19475341034179!3d19.04503896931781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e5e128eb19%3A0x802a227657dc0c31!2sMuseo%20Casa%20de%20Alfe%C3%B1ique!5e1!3m2!1ses-419!2smx!4v1745654642626!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Atlixcáyotl 2501, Reserva Territorial Atlixcáyotl, Puebla, Pue.</p>
+                            <p><strong>Horario:</strong> Martes a Domingo de 10:00 a 19:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                    
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/m9.jpg" class="card-img-top" alt="Catedral de Puebla">
+            <div class="card-body d-flex flex-column">
+              <h6>Museo Casa del Deán</h6>
+              <p class="fs-6">Este edificio es considerado la primera construcción civil de la ciudad de Puebla y data del año 1580. La casa lleva el nombre de su primer propietario, Tomás de la Plaza, quien era el Deán de la Catedral de Puebla.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#museoDeanModal">Ver Más</a>
+              <div class="modal fade" id="museoDeanModal" tabindex="-1" aria-labelledby="museoDeanLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="museoDean">Museo Casa del Deán</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselmuseoDean" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/museo deán/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo deán/m1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo deán/m2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo deán/m3.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoDean" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoDean" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>El edificio destaca por su fachada renacentista de cantera gris extraída del cerro de Loreto, que es completamente lisa para resaltar la portada que sigue el estilo renacentista. En su interior, se conservan dos habitaciones originales que muestran la decoración cuidada y esmerada de su propietario. Estas habitaciones albergan dos murales únicos del siglo XVI: uno representa a las sibilas, mujeres que recibieron del dios Apolo el don de la adivinación, y el otro se denomina de los Triunfos y se encuentra en la recámara de don Tomás de la Plaza.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4844652298593!2d-98.2024704260499!3d19.042425653028097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0dd5b9b9827%3A0x10a1bf18e2cdba56!2sCasa%20del%20De%C3%A1n!5e0!3m2!1ses-419!2smx!4v1745994769093!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> C. 16 de Septiembre 505, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong> Martes a Sábado de 10:00 a 17:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                     
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/m11.jpg" class="card-img-top" alt="Museo Amparo">
+            <div class="card-body d-flex flex-column">
+              <h6>Museo de la No Intervención, Fuerte de Loreto</h6>
+              <p class="fs-6">El Museo de la No Intervención, ubicado en el Fuerte de Loreto en Puebla, México, es un sitio histórico que cuenta con una extensa colección dividida en siete salas. La estructura del Fuerte de Loreto se comenzó a construir a mediados del siglo XVII como una capilla dedicada a la Virgen de Loreto, con apoyo de seglares y del clero secular.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#museoFLModal">Ver Más</a>
+              <div class="modal fade" id="museoFLModal" tabindex="-1" aria-labelledby="museoFLLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="museoFL">Museo de la No Intervención, Fuerte de Loreto</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselmuseoFL" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/museo fuertes/m1.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo fuertes/m.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo fuertes/m2.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo fuertes/m3.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoFL" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoFL" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>Las salas del museo presentan la historia del Fuerte de Loreto y su papel en las guerras de Independencia, Reforma, Intervención y Revolución. Entre las exposiciones se encuentran piezas referentes a la Virgen de Loreto, la indumentaria del ejército durante la lucha por la Independencia, armas, planos de los Fuertes de Loreto y de Guadalupe, y objetos utilizados durante el Sitio de Puebla del 2 de abril de 1863.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1339514497713!2d-98.18709108938003!3d19.057847293612703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc10203be6b35%3A0x13cfced5c277fb0d!2sMuseo%20del%20Fuerte%20de%20Loreto!5e0!3m2!1ses-419!2smx!4v1745995258327!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> s/n De los, Calz. de los Fuertes, Residencial las Fuentes, 72270 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong> Martes a Domingo de 9:00 a 17:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                     
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  
+      <div class="section-title" id="zonasr">Recomendado</div>
+      <br><br>
+      <div class="row g-5">
+
+        <div class="col-md-12 d-flex recom">
+          <img src="images/m4.png" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Museo de Arte Popular UPAEP</h6>
+            <div class="star-rating">★★★★★</div>
+            <p>Este museo alberga una colección de arte popular religioso que abarca desde los siglos XVIII hasta el XX, incluyendo más de 500 obras del siglo XX de la artista poblana Josefina Albisua Fernández y una pequeña colección de objetos relacionados con la Guerra Cristera.</p>
+            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoUpModal">Ver detalles</button>
+            <div class="modal fade" id="museoUpModal" tabindex="-1" aria-labelledby="museoUpLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museoUp">Museo de Arte Popular Upaep</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseoUp" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo up/m1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo up/m.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo up/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo up/m3.jpeg" class="d-block w-100  object-fit: contain;" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoUp" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoUp" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Además de su valioso acervo, el Museo UPAEP se destaca por sus programas sociales dirigidos a grupos vulnerables, actividades artísticas, educativas y de formación, así como por sus programas de vinculación con la academia, siendo un espacio universitario incluyente, dinámico e innovador. El museo cuenta con cuatro salas, tres de las cuales son orientadas verticalmente y una sala de 180 metros cuadrados dedicada a la exposición "Puebla Herencia Viva", que ofrece un recorrido a través de la historia de la Ciudad de Puebla. También tiene un programa de exposiciones temporales de arte contemporáneo, historia y ciencia.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.741770364369!2d-98.21828212604973!3d19.048321652843267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0dd8d920a57%3A0x16a4f7cb1bea5c44!2sMuseo%20UPAEP!5e1!3m2!1ses-419!2smx!4v1745808134723!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Av 11 Pte 1916, Barrio de Santiago, 72410 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a Viernes de 9:00 am a 5:00 pm y Sábados de 10:00 am a 4:00 pm.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+        <div class="col-md-12 d-flex recom">
+            <img src="images/i3.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Iglesia de San Francisco</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Templo de San Francisco en Puebla es un edificio religioso de gran importancia histórica y arquitectónica. Fue el primer convento establecido en la ciudad de Puebla, fundado por Fray Toribio de Benavente en 1531, quien ofició la misa de su fundación.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#igleSFModal">Ver detalles</button>
+            <div class="modal fade" id="igleSFModal" tabindex="-1" aria-labelledby="igleSFLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="igleSF">Iglesia de San Francisco</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouseligleSF" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/iglesia sf/i3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sf/i.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sf/i1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sf/i2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouseligleSF" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouseligleSF" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>La construcción del templo concluyó en 1585, aunque sufrió varias reformas arquitectónicas y artísticas a lo largo de los siglos siguientes. En el siglo XVIII, se reformó la fachada con cantera, ladrillo rojo y azulejo, con un diseño similar al de los retablos de madera del interior de las iglesias. El templo es conocido por su fachada churrigueresca, que combina cantera gris con un paramento de ladrillo recubierto con tableros de azulejo talaverano. Destaca el empleo del estípite, un soporte arquitectónico que se convirtió en un nuevo orden para los constructores novohispanos.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4276006961877!2d-98.19202162604981!3d19.04492835294976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6bf20c8748d%3A0x15772a534ef8e783!2sTemplo%20y%20convento%20franciscano%20de%20la%20impresi%C3%B3n%20de%20las%20llagas%20de%20San%20Francisco!5e0!3m2!1ses-419!2smx!4v1745814538747!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Av 14 Ote 1009, Barrio del Alto, 72290 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a Domingo de 7:00 a 18:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/m5.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Museo de la Evolución</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Museo de la Evolución Puebla es una atracción turística ubicada en el centro histórico de Puebla. Este museo ofrece una experiencia educativa y cultural que explora la evolución de la vida en la región y más allá.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoEvModal">Ver detalles</button>
+            <div class="modal fade" id="museoEvModal" tabindex="-1" aria-labelledby="museoEvLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museoEv">Museo de la Evolución</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseoEv" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo ev/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo ev/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo ev/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo ev/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoEv" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoEv" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>El museo ofrece entrada libre los martes, lo que lo hace especialmente atractivo para aquellos que buscan actividades económicas. Para otros días, el precio de la entrada es de $45.00 para personas con credencial del INAPAM, personas con discapacidad, niños menores de 12 años, estudiantes y docentes con credencial vigente. Además, se ofrecen visitas guiadas por $230.00 y audioguías por $33.00.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.135730456715!2d-98.18414682604944!3d19.05776905254705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc101135dcca5%3A0x163442cbaf36765a!2sMuseo%20de%20la%20Evoluci%C3%B3n%20Puebla!5e0!3m2!1ses-419!2smx!4v1745814767796!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Calz. Ejército de Ote. s/n Zona de los Fuertes, Av Ocote, Centro histórico de Puebla, 72260 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a Domingo de 10:00 a 18:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/m6.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Iglesia del Señor de las Maravillas</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Señor de las Maravillas es una talla del siglo XVII que representa a Cristo caído en el suelo con la cruz en el costado izquierdo, apoyado en las rodillas y los brazos, con la cabeza girada a su derecha y una herida sangrante en la mejilla izquierda.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#igleSMModal">Ver detalles</button>
+            <div class="modal fade" id="igleSMModal" tabindex="-1" aria-labelledby="igleSMLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="igleSM">Iglesia del Señor de las Maravillas</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouseligleSM" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/iglesia sm/i.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sm/i1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sm/i2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sm/i3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouseligleSM" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouseligleSM" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>La imagen del Señor de las Maravillas participa cada año en la Procesión de Viernes Santo, donde es la última en integrarse al recorrido que parte de la Catedral y se lleva a cabo por las calles del Centro Histórico. La imagen es portada por hombres que se preparan física y espiritualmente durante meses para este evento.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30170.27651730548!2d-98.2308310891602!3d19.051222200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc1c4da5c6caf%3A0x38019ca661a053de!2sSantuario%20del%20Se%C3%B1or%20de%20las%20Maravillas%20Puebla!5e0!3m2!1ses-419!2smx!4v1745815436816!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Av 18 Ote 2, Centro, 72089 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong><br> Lunes, Miércoles, Jueves, Sábado y Domingo de 8:00 a 17:50 horas. <br>Martes y Viernes de 9:00 a 17:50 horas.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/m7.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Museo del Arte Religioso, Ex Convento de Santa Mónica</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Museo de Arte Religioso Ex Convento de Santa Mónica, ubicado en la Ciudad de Puebla, es un importante museo dedicado a la vida monacal femenina de los siglos XVII al XX. Fue inaugurado en 1938 en un inmueble del siglo XVII que sufrió modificaciones en los siglos XVIII, XIX y principios del XX.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoreligModal">Ver detalles</button>
+            <div class="modal fade" id="museoreligModal" tabindex="-1" aria-labelledby="museoreligLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museorelig">Museo del Arte Religioso, Ex Convento de Santa Mónica</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseorelig" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo relig/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo relig/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo relig/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo relig/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseorelig" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseorelig" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Este museo cuenta con un acervo pictórico de notables maestros y objetos que reflejan las costumbres y tareas de las religiosas. Entre los artistas destacados se encuentran Juan Correa, Pascual Pérez, Juan de Villalobos, José Patricio Polo, Luis Berrueco, José de Marimón, Miguel Cabrera, Nicolás Rodríguez Juárez, Francisco Castillo, Miguel Jerónimo de Zendejas, Lorenzo Zendejas, Rafael Morante, así como atribuidas a Juan Tinoco y Joseph Magón.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120680.89935254082!2d-98.33933675664059!3d19.0515064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e190fb001f%3A0xc7725df13a3084db!2sMuseo%20de%20Arte%20Religioso%20de%20Santa%20M%C3%B3nica!5e0!3m2!1ses-419!2smx!4v1745996124437!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Av 18 Pte 103, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Martes a Domingo de 10:00 a 17:00 hrs. </p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/m8.jpg" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Museo Casa del Mendrugo</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>Entre 1990 y 2008, la casa permaneció abandonada y tuvo un grave deterioro hasta convertirse en ruinas. En 2008, se inició un proyecto de recuperación autorizado y supervisado por el INAH para convertirlo en vivienda y espacio cultural. El museo se fundó oficialmente el 19 de marzo de 2013.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museomenModal">Ver detalles</button>
+            <div class="modal fade" id="museomenModal" tabindex="-1" aria-labelledby="museomenLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museomen">Museo Casa del Mendrugo</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseomen" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo mendrugo/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo mendrugo/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo mendrugo/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo mendrugo/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseomen" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseomen" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>La casa fue propiedad de los jesuitas hasta su expulsión en 1767. Posteriormente pasó a ser propiedad de la Iglesia Católica y formó parte del Colegio del Estado. En la segunda mitad del siglo XIX, con las Leyes de Reforma de Benito Juárez, pasó a particulares y cambió de propietario con frecuencia. Fue declarado monumento histórico protegido en 1914.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.499101110395!2d-98.19879782604994!3d19.041781453048355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e628c99f91%3A0x9b3acd990483a7a4!2sMuseo%20Casa%20del%20Mendrugo!5e0!3m2!1ses-419!2smx!4v1745996541527!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> C. 4 Sur 304 - C, Centro, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a Sábado de 8:00-23:00 horas y Domingo: 8:00-18:00 horas.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <br><br>
+
+      <div class="section-title" id="museos">Museos</div>
+      <br><br>
+      <div class="row g-5">
+        <div class="col-md-12 d-flex recom">
+          <img src="images/m10.jpg" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Museo Regional Casa del Alfeñique</h6>
+            <div class="star-rating">★★★★★</div>
+            <p>El Museo Regional Casa de Alfeñique, también conocido como la Casa de Alfeñique, es un museo fundado en 1926 y ubicado en la ciudad de Puebla, México. Se caracteriza por su arquitectura barroca y es considerado el primer museo de la ciudad.</p>
+            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoAlfModal">Ver detalles</button>
+            <div class="modal fade" id="museoAlfModal" tabindex="-1" aria-labelledby="museoAlfLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museoAlf">Museo Regional Casa del Alfeñique</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseoAlf" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo alf/m5.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo alf/m2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo alf/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo alf/m1.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoAlf" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoAlf" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>La construcción de la casa data del siglo XVIII y es obra de Antonio de Santa María Incháurregui, quien utilizó argamasa, petatillo y mayólica. Según la leyenda popular, el inmueble fue construido como un regalo de bodas para una novia que había pedido "una casa de alfeñique", un tipo de caramelo procedente de España común en México durante la época colonial.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.014131148106!2d-98.19475341034179!3d19.04503896931781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e5e128eb19%3A0x802a227657dc0c31!2sMuseo%20Casa%20de%20Alfe%C3%B1ique!5e1!3m2!1ses-419!2smx!4v1745654642626!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Calle 4 Oriente No. 416, Centro Histórico, Puebla, Pue.</p>
+                          <p><strong>Horario:</strong> Martes a Domingo de 10:00 a 17:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-12 d-flex recom">
+          <img src="images/m1.png" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Museo Amparo</h6>
+            <div class="star-rating">★★★★★</div>
+              <p>El Museo Amparo, ubicado en el centro histórico de la ciudad de Puebla, es una institución privada creada en memoria de Amparo Rugarcía de Espinosa y Iglesias, esposa del banquero y filántropo mexicano Manuel Espinosa Yglesias, a través de la Fundación Amparo por iniciativa de su hija Ángeles Espinosa y Iglesias Rugarcía.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoAmpModal">Ver detalles</button>
+              <div class="modal fade" id="museoAmpModal" tabindex="-1" aria-labelledby="museoAmpLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="museoAmp">Museo Amparo</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselmuseoAmp" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/museo am/m.png" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo am/m2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo am/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo am/m4.png" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoAmp" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoAmp" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>Su finalidad es conservar, investigar, exhibir y divulgar el arte prehispánico, virreinal, moderno y contemporáneo de México. El 28 de febrero de 1991 el Museo Amparo abrió por primera vez sus puertas, desde entonces exhibe gran parte de su Colección de Arte Prehispánico, Arte Virreinal y siglo XIX y Arte Contemporáneo, ofreciendo a la par una amplia agenda de exposiciones temporales, nacionales e internacionales, sumando a éstas diversidad de actividades lúdicas, creativas, educativas y de investigación.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.8744888181486!2d-98.20102022604986!3d19.040931553075005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e80ee17c7d%3A0x81b13f9dfc55a353!2sMuseo%20Amparo!5e1!3m2!1ses-419!2smx!4v1745746411327!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Calle 2 Sur No. 708, Centro Histórico, Puebla, Pue.</p>
+                            <p><strong>Horario:</strong> Miércoles a Lunes de 10:00 a 18:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>  
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+
+        <div class="col-md-12 d-flex recom">
+          <img src="images/m2.png" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Museo del Barroco</h6>
+            <div class="star-rating">★★★★★</div>
+            <p>El Museo Internacional del Barroco (MIB) es un museo de arte barroco ubicado en Puebla de Zaragoza, Puebla, México. Fue diseñado por el arquitecto japonés Toyo Itō y inaugurado el 4 de febrero de 2016.</p>
+            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoBarModal">Ver detalles</button>
+            <div class="modal fade" id="museoBarModal" tabindex="-1" aria-labelledby="museoBarLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museoBar">Museo del Barroco</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseoBar" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo bar/m1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo bar/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo bar/m2.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo bar/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoBar" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoBar" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Este museo tiene como objetivo crear diálogos entre el arte del pasado y el contemporáneo, entre lo barroco y el neobarroco, a través de museografía interactiva y exposiciones temporales que permiten reflexionar sobre los lenguajes propios del barroco. El MIB es un espacio único que ofrece una visión internacional del estilo barroco, con piezas provenientes de diversos países. La arquitectura del museo es muy peculiar, con paredes blancas que lo hacen atractivo y distintivo.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.014131148106!2d-98.19475341034179!3d19.04503896931781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e5e128eb19%3A0x802a227657dc0c31!2sMuseo%20Casa%20de%20Alfe%C3%B1ique!5e1!3m2!1ses-419!2smx!4v1745654642626!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Atlixcáyotl 2501, Reserva Territorial Atlixcáyotl, Puebla, Pue.</p>
+                          <p><strong>Horario:</strong> Martes a Domingo de 10:00 a 19:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-12 d-flex recom">
+          <img src="images/m4.png" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Museo de Arte Popular UPAEP</h6>
+            <div class="star-rating">★★★★★</div>
+            <p>Este museo alberga una colección de arte popular religioso que abarca desde los siglos XVIII hasta el XX, incluyendo más de 500 obras del siglo XX de la artista poblana Josefina Albisua Fernández y una pequeña colección de objetos relacionados con la Guerra Cristera.</p>
+            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoUpModal">Ver detalles</button>
+            <div class="modal fade" id="museoUpModal" tabindex="-1" aria-labelledby="museoUpLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museoUp">Museo de Arte Popular Upaep</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseoUp" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo up/m1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo up/m.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo up/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo up/m3.jpeg" class="d-block w-100  object-fit: contain;" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoUp" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoUp" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Además de su valioso acervo, el Museo UPAEP se destaca por sus programas sociales dirigidos a grupos vulnerables, actividades artísticas, educativas y de formación, así como por sus programas de vinculación con la academia, siendo un espacio universitario incluyente, dinámico e innovador. El museo cuenta con cuatro salas, tres de las cuales son orientadas verticalmente y una sala de 180 metros cuadrados dedicada a la exposición "Puebla Herencia Viva", que ofrece un recorrido a través de la historia de la Ciudad de Puebla. También tiene un programa de exposiciones temporales de arte contemporáneo, historia y ciencia.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.741770364369!2d-98.21828212604973!3d19.048321652843267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0dd8d920a57%3A0x16a4f7cb1bea5c44!2sMuseo%20UPAEP!5e1!3m2!1ses-419!2smx!4v1745808134723!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Av 11 Pte 1916, Barrio de Santiago, 72410 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a Viernes de 9:00 am a 5:00 pm y Sábados de 10:00 am a 4:00 pm.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 d-flex recom">
+          <img src="images/m9.jpg" class="img-fluid me-4" alt="">
+          <div>
+        <h6>Museo Casa del Deán</h6>
+        <div class="star-rating">★★★★★</div>
+              <p>Este edificio es considerado la primera construcción civil de la ciudad de Puebla y data del año 1580. La casa lleva el nombre de su primer propietario, Tomás de la Plaza, quien era el Deán de la Catedral de Puebla.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoDeanModal">Ver detalles</button>
+              <div class="modal fade" id="museoDeanModal" tabindex="-1" aria-labelledby="museoDeanLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="museoDean">Museo Casa del Deán</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselmuseoDean" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/museo deán/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo deán/m1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo deán/m2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/museo deán/m3.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoDean" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoDean" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>El edificio destaca por su fachada renacentista de cantera gris extraída del cerro de Loreto, que es completamente lisa para resaltar la portada que sigue el estilo renacentista. En su interior, se conservan dos habitaciones originales que muestran la decoración cuidada y esmerada de su propietario. Estas habitaciones albergan dos murales únicos del siglo XVI: uno representa a las sibilas, mujeres que recibieron del dios Apolo el don de la adivinación, y el otro se denomina de los Triunfos y se encuentra en la recámara de don Tomás de la Plaza.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4844652298593!2d-98.2024704260499!3d19.042425653028097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0dd5b9b9827%3A0x10a1bf18e2cdba56!2sCasa%20del%20De%C3%A1n!5e0!3m2!1ses-419!2smx!4v1745994769093!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> C. 16 de Septiembre 505, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong> Martes a Sábado de 10:00 a 17:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                     
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/m5.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Museo de la Evolución</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Museo de la Evolución Puebla es una atracción turística ubicada en el centro histórico de Puebla. Este museo ofrece una experiencia educativa y cultural que explora la evolución de la vida en la región y más allá.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoEvModal">Ver detalles</button>
+            <div class="modal fade" id="museoEvModal" tabindex="-1" aria-labelledby="museoEvLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museoEv">Museo de la Evolución</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseoEv" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo ev/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo ev/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo ev/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo ev/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoEv" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoEv" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>El museo ofrece entrada libre los martes, lo que lo hace especialmente atractivo para aquellos que buscan actividades económicas. Para otros días, el precio de la entrada es de $45.00 para personas con credencial del INAPAM, personas con discapacidad, niños menores de 12 años, estudiantes y docentes con credencial vigente. Además, se ofrecen visitas guiadas por $230.00 y audioguías por $33.00.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.135730456715!2d-98.18414682604944!3d19.05776905254705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc101135dcca5%3A0x163442cbaf36765a!2sMuseo%20de%20la%20Evoluci%C3%B3n%20Puebla!5e0!3m2!1ses-419!2smx!4v1745814767796!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Calz. Ejército de Ote. s/n Zona de los Fuertes, Av Ocote, Centro histórico de Puebla, 72260 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a Domingo de 10:00 a 18:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-12 d-flex recom">
+          <img src="images/m11.jpg" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Museo de la No Intervención, Fuerte de Loreto</h6>
+            <div class="star-rating">★★★★★</div>
+            <p>El Museo de la No Intervención, ubicado en el Fuerte de Loreto en Puebla, México, es un sitio histórico que cuenta con una extensa colección dividida en siete salas. La estructura del Fuerte de Loreto se comenzó a construir a mediados del siglo XVII como una capilla dedicada a la Virgen de Loreto, con apoyo de seglares y del clero secular.</p>
+            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoFLModal">Ver detalles</button>
+            <div class="modal fade" id="museoFLModal" tabindex="-1" aria-labelledby="museoFLLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museoFL">Museo de la No Intervención, Fuerte de Loreto</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseoFL" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo fuertes/m1.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo fuertes/m.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo fuertes/m2.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo fuertes/m3.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseoFL" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseoFL" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Las salas del museo presentan la historia del Fuerte de Loreto y su papel en las guerras de Independencia, Reforma, Intervención y Revolución. Entre las exposiciones se encuentran piezas referentes a la Virgen de Loreto, la indumentaria del ejército durante la lucha por la Independencia, armas, planos de los Fuertes de Loreto y de Guadalupe, y objetos utilizados durante el Sitio de Puebla del 2 de abril de 1863.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1339514497713!2d-98.18709108938003!3d19.057847293612703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc10203be6b35%3A0x13cfced5c277fb0d!2sMuseo%20del%20Fuerte%20de%20Loreto!5e0!3m2!1ses-419!2smx!4v1745995258327!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> s/n De los, Calz. de los Fuertes, Residencial las Fuentes, 72270 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Martes a Domingo de 9:00 a 17:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/m7.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Museo del Arte Religioso, Ex Convento de Santa Mónica</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Museo de Arte Religioso Ex Convento de Santa Mónica, ubicado en la Ciudad de Puebla, es un importante museo dedicado a la vida monacal femenina de los siglos XVII al XX. Fue inaugurado en 1938 en un inmueble del siglo XVII que sufrió modificaciones en los siglos XVIII, XIX y principios del XX.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoreligModal">Ver detalles</button>
+            <div class="modal fade" id="museoreligModal" tabindex="-1" aria-labelledby="museoreligLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museorelig">Museo del Arte Religioso, Ex Convento de Santa Mónica</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseoreligi" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo relig/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo relig/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo relig/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo relig/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseorelig" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseorelig" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Este museo cuenta con un acervo pictórico de notables maestros y objetos que reflejan las costumbres y tareas de las religiosas. Entre los artistas destacados se encuentran Juan Correa, Pascual Pérez, Juan de Villalobos, José Patricio Polo, Luis Berrueco, José de Marimón, Miguel Cabrera, Nicolás Rodríguez Juárez, Francisco Castillo, Miguel Jerónimo de Zendejas, Lorenzo Zendejas, Rafael Morante, así como atribuidas a Juan Tinoco y Joseph Magón.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120680.89935254082!2d-98.33933675664059!3d19.0515064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e190fb001f%3A0xc7725df13a3084db!2sMuseo%20de%20Arte%20Religioso%20de%20Santa%20M%C3%B3nica!5e0!3m2!1ses-419!2smx!4v1745996124437!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Av 18 Pte 103, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Martes a Domingo de 10:00 a 17:00 hrs. </p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/m8.jpg" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Museo Casa del Mendrugo</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>Entre 1990 y 2008, la casa permaneció abandonada y tuvo un grave deterioro hasta convertirse en ruinas. En 2008, se inició un proyecto de recuperación autorizado y supervisado por el INAH para convertirlo en vivienda y espacio cultural. El museo se fundó oficialmente el 19 de marzo de 2013.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museomenModal">Ver detalles</button>
+            <div class="modal fade" id="museomenModal" tabindex="-1" aria-labelledby="museomenLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="museomen">Museo Casa del Mendrugo</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmuseomen" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/museo mendrugo/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo mendrugo/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo mendrugo/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/museo mendrugo/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseomen" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseomen" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>La casa fue propiedad de los jesuitas hasta su expulsión en 1767. Posteriormente pasó a ser propiedad de la Iglesia Católica y formó parte del Colegio del Estado. En la segunda mitad del siglo XIX, con las Leyes de Reforma de Benito Juárez, pasó a particulares y cambió de propietario con frecuencia. Fue declarado monumento histórico protegido en 1914.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.499101110395!2d-98.19879782604994!3d19.041781453048355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e628c99f91%3A0x9b3acd990483a7a4!2sMuseo%20Casa%20del%20Mendrugo!5e0!3m2!1ses-419!2smx!4v1745996541527!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> C. 4 Sur 304 - C, Centro, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a Sábado de 8:00-23:00 horas y Domingo de 8:00-18:00 horas.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      
+      <br><br>
+
+      <div class="section-title" id="iglesias">Iglesias</div>
+      <br><br>
+      <div class="row g-5">
+      
+        <div class="col-md-12 d-flex recom">
+          <img src="images/m6.png" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Iglesia del Señor de las Maravillas</h6>
+            <div class="star-rating">★★★★★</div>
+            <p>El Señor de las Maravillas es una talla del siglo XVII que representa a Cristo caído en el suelo con la cruz en el costado izquierdo, apoyado en las rodillas y los brazos, con la cabeza girada a su derecha y una herida sangrante en la mejilla izquierda.</p>
+            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#igleSMModal">Ver detalles</button>
+          <div class="modal fade" id="igleSMModal" tabindex="-1" aria-labelledby="igleSMLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="igleSM">Iglesia del Señor de las Maravillas</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+          
+          
+                  <div id="carouseligleSM" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/iglesia sm/i.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/iglesia sm/i1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/iglesia sm/i2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/iglesia sm/i3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouseligleSM" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouseligleSM" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              
+                  
+                  <div class="row mt-4">
+                    <div class="col-md-6">
+                      <h5>Descripción:</h5>
+                      <p>La imagen del Señor de las Maravillas participa cada año en la Procesión de Viernes Santo, donde es la última en integrarse al recorrido que parte de la Catedral y se lleva a cabo por las calles del Centro Histórico. La imagen es portada por hombres que se preparan física y espiritualmente durante meses para este evento.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30170.27651730548!2d-98.2308310891602!3d19.051222200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc1c4da5c6caf%3A0x38019ca661a053de!2sSantuario%20del%20Se%C3%B1or%20de%20las%20Maravillas%20Puebla!5e0!3m2!1ses-419!2smx!4v1745815436816!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <div class="mt-3">
+                        <p><strong>Ubicación:</strong> Av 18 Ote 2, Centro, 72089 Heroica Puebla de Zaragoza, Pue.</p>
+                        <p><strong>Horario:</strong><br> Lunes, Miércoles, Jueves, Sábado y Domingo de 8:00 a 17:50 horas. <br>Martes y Viernes de 9:00 a 17:50 horas.</p>
+                      </div>
+                    </div>
+                  </div>
+          
+                  
+                 
+          
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-md-12 d-flex recom">
+            <img src="images/i3.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Iglesia de San Francisco</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Templo de San Francisco en Puebla es un edificio religioso de gran importancia histórica y arquitectónica. Fue el primer convento establecido en la ciudad de Puebla, fundado por Fray Toribio de Benavente en 1531, quien ofició la misa de su fundación.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#igleSFModal">Ver detalles</button>
+            <div class="modal fade" id="igleSFModal" tabindex="-1" aria-labelledby="igleSFLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="igleSF">Iglesia de San Francisco</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouseligleSF" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/iglesia sf/i3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sf/i.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sf/i1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/iglesia sf/i2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouseligleSF" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouseligleSF" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>La construcción del templo concluyó en 1585, aunque sufrió varias reformas arquitectónicas y artísticas a lo largo de los siglos siguientes. En el siglo XVIII, se reformó la fachada con cantera, ladrillo rojo y azulejo, con un diseño similar al de los retablos de madera del interior de las iglesias. El templo es conocido por su fachada churrigueresca, que combina cantera gris con un paramento de ladrillo recubierto con tableros de azulejo talaverano. Destaca el empleo del estípite, un soporte arquitectónico que se convirtió en un nuevo orden para los constructores novohispanos.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4276006961877!2d-98.19202162604981!3d19.04492835294976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6bf20c8748d%3A0x15772a534ef8e783!2sTemplo%20y%20convento%20franciscano%20de%20la%20impresi%C3%B3n%20de%20las%20llagas%20de%20San%20Francisco!5e0!3m2!1ses-419!2smx!4v1745814538747!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Av 14 Ote 1009, Barrio del Alto, 72290 Heroica Puebla de Zaragoza, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a Domingo de 7:00 a 18:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 d-flex recom">
+          <img src="images/i1.png" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Catedral de Puebla</h6>
+            <div class="star-rating">★★★★★</div>
+              <p>La Catedral de Puebla, también conocida como Catedral Metropolitana de Puebla, es un edificio emblemático de la ciudad de Puebla, México.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#catModal">Ver detalles</button>
+              <div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="cat">Catedral de Puebla</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselcat" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/cat/c.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/cat/c1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/cat/c2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/cat/c3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselcat" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselcat" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>La catedral es de estilo herreriano, con una arquitectura que combina elementos barrocos tardíos con toques neoclásicos. Su fachada presenta columnas dóricas y corintias, y su estructura es de cruz latina con cinco naves. El retablo principal es octogonal, con otros cuatro retablos orientados a los puntos cardinales, y el complejo incluye catorce capillas en diversos estilos, cada una con numerosas obras artísticas.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.8392240697294!2d-98.20090402604986!3d19.042895453013408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6280aa50887%3A0x5b21261581c701c5!2sCatedral%20de%20Nuestra%20Se%C3%B1ora%20de%20la%20Inmaculada%20Concepci%C3%B3n%20de%20Puebla!5e1!3m2!1ses-419!2smx!4v1745746878889!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> C. 16 de Septiembre s/n, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong>  Todos los días de 8:00 a 20:00 hrs.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+      
+      <br><br>
+
+      <div class="section-title" id="pueblosm">Pueblos Mágicos</div>
+      <br><br>
+      <div class="row g-5">
+        <div class="col-md-12 d-flex recom">
+          <img src="images/pueblo chignahuapan/z.jpg" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Chignahuapan</h6>
+            <div class="star-rating">★★★★★</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, non molestiae! Accusamus soluta itaque beatae veritatis. Harum perferendis fugiat voluptate eaque, voluptatum tenetur libero, nemo, aperiam laborum accusamus corrupti repudiandae?</p>
+            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#pchigModal">Ver detalles</button>
+            <div class="modal fade" id="pchigModal" tabindex="-1" aria-labelledby="pchigLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="pchig">Chignahuapan</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselpchig" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/pueblo chignahuapan/z1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo chignahuapan/z2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo chignahuapan/z3.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo chignahuapan/z4.avif" class="d-block w-100  object-fit: contain;" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselpchig" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselpchig" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, eos dolor. Delectus ducimus esse voluptatem quibusdam eum tenetur, tempora labore eos dolore sint ea voluptatibus possimus! Illo distinctio ab recusandae?</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30024.50130685662!2d-98.05474280935442!3d19.837301337335045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d06c6521625737%3A0x9035f9cc4316109a!2s73300%20Chignahuapan%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1746258290431!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Se localiza en la parte noroeste del estado de puebla. Limita al norte con Zacatlán; al este con el estado de Hidalgo; al sur con el estado de Tlaxcala; al oeste con Zacatlán y Aquixtla.</p>
+                          <p><strong>Atractivos:</strong> Aguas termales, Basílica de la Inmaculada Concepción, Cascada El Cajón, Cascada de Quetzalapan, Fábrica de esferas, Iglesia del Honguito, etc.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+        <div class="col-md-12 d-flex recom">
+            <img src="images/pueblo cholula/z1.webp" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Cholula</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et, autem fugiat exercitationem facilis reprehenderit. Perspiciatis beatae praesentium nesciunt id, neque dicta deleniti repellat? Non ut vitae excepturi esse officiis!</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#pCholModal">Ver detalles</button>
+            <div class="modal fade" id="pCholModal" tabindex="-1" aria-labelledby="pCholLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="pChol">Cholula</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselpChol" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/pueblo cholula/z.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo cholula/z2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo cholula/z3.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo cholula/z4.webp" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselpChol" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselpChol" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequatur rem, quasi voluptatibus rerum est consectetur vero quas unde accusantium voluptas laborum deleniti reiciendis. Vero, ducimus sunt! Repellendus, repellat blanditiis!</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0284923531503!2d-98.30889882604932!3d19.062484852399123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc626ff73524d%3A0xee130db886694b76!2sCholula%20Pueblo%20M%C3%A1gico!5e0!3m2!1ses-419!2smx!4v1746260985898!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Av. 4 Ote. 1, Residencial el Refugio de San Miguel, 72764 Cholula de Rivadavia, Pue.</p>
+                          <p><strong>Atractivos:</strong> Subir al Santuario de Nuestra Señora de los Remedios para admirar la ciudad y el volcán Popocatépetl, conocer las plazas principales tanto de San Pedro como San Andrés, los pueblos hermanos, saborear cualquier postre del Café Ocho 30, en San Andrés, etc.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/pueblo cuetzalan/z.jpeg" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Cuetzalan</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptate eligendi eaque, culpa at dolores placeat nihil voluptates excepturi eius fuga enim tempore illum, quod facere nulla reiciendis officia sed!</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#pCuetzModal">Ver detalles</button>
+            <div class="modal fade" id="pCuetzModal" tabindex="-1" aria-labelledby="pCuetzLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="pCuetz">Cuetzalan</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselpCuetz" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/pueblo cuetzalan/z1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo cuetzalan/z2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo cuetzalan/z3.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/pueblo cuetzalan/z4.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselpCuetz" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselpCuetz" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>El museo ofrece entrada libre los martes, lo que lo hace especialmente atractivo para aquellos que buscan actividades económicas. Para otros días, el precio de la entrada es de $45.00 para personas con credencial del INAPAM, personas con discapacidad, niños menores de 12 años, estudiantes y docentes con credencial vigente. Además, se ofrecen visitas guiadas por $230.00 y audioguías por $33.00.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.759523045886!2d-97.52403862602169!3d20.018605121708376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da8d9e229dbc91%3A0x4ddefe8f46c212fc!2sCuetzalan%20Pueblo%20Magico!5e0!3m2!1ses-419!2smx!4v1746261270664!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Centenario 3-9, Centro, 73560 Cdad. de Cuetzalan, Pue.</p>
+                          <p><strong>Atractivos:</strong> Entrar a la imponente Parroquia de San Francisco de Asís, cenar en la Peña de los Jarritos o el lienzo charro El Potrillo, conocer el Jardín Botánico Xoxoctic lleno de orquídeas y helechos o ver cómo se elaboran huipiles y rebozos con telar de cintura en el Mercado de Artesanías.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  
+      
+      <br><br>
+
+      <section class="bg-info py-5 text-white" id="contacto">
+        <div class="container text-center">
+          <h2 class="mb-4">Síguenos en redes sociales</h2>
+          <p>Conéctate con nosotros para descubrir más sobre los lugares turísticos de Puebla.</p>
+      
+          <div class="d-flex justify-content-center gap-4 mt-4">
+      
+            <a href="https://www.facebook.com/share/1EWMUQmWFf/" target="_blank" class="text-white fs-2">
+              <i class="bi bi-facebook"></i>
+            </a>
+      
+            <a href="https://www.instagram.com/tupuebla.w?igsh=YzJxNXc4bDM5ZWJy" target="_blank" class="text-white fs-2">
+              <i class="bi bi-instagram"></i>
+            </a>
+      
+            <a href="https://wa.me/5212215705356" target="_blank" class="text-white fs-2">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+      
+          </div>
+        </div>
+      </section>
+
+  <div class="text-end mt-2 subir">
+    <a href="#" class="btn btn-link"><button class="btn btn-primary" type="submit" style="border-color: white; color: white;">Regresar</button></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+</body>
+  </html>

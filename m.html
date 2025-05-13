@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercados Artesanales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Great+Vibes&family=Monsieur+La+Doulaise&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Great+Vibes&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+   
+  <div class="logo img-fluid" style="text-align: left;">
+        <a href="index.html"><img src="images/tupuebla.jpeg" alt="Logo Puebla"></a>
+      </div>
+
+    <header>
+        <div class="container py-3">
+            <nav class="navbar navbar-expand-lg navbar dark" >
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#zonasb">Más buscado</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Recomendado
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#zonasb">En Puebla</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#zonasr">Fuera de Puebla</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                      </li>
+                      <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Más...
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Artesanías</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Bisuterías</a></li>
+                        </ul>
+                      </li> -->
+                    </ul>
+                    <button id="btnSearch" class="btn btn-light">
+                      <i class="fas fa-search"></i>
+                      </button>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <div id="cont-bars-search">
+      <div class="container">
+        <input type="text" id="inputSearch" class="form-control form-control-lg rounded-pill" placeholder="Buscar...">
+      </div>
+    </div>
+    
+    <ul id="box-search" class="list-group"  style="top: 170px;; max-width: 800px; width: 90%">
+      <li class="list-group-item"><a href="h.html"><i class="fas fa-search me-2"></i>Hoteles</a></li>
+      <li class="list-group-item"><a href="m.html"><i class="fas fa-search me-2"></i>Mercados artesanales</a></li>
+      <li class="list-group-item"><a href="z.html"><i class="fas fa-search me-2"></i>Zonas turísticas</a></li>
+      <li class="list-group-item"><a href="g.html"><i class="fas fa-search me-2"></i>Gastronomía</a></li>
+      <li class="list-group-item"><a href="#contacto"><i class="fas fa-search me-2"></i>Contacto</a></li>
+      <li id="no-results" class="list-group-item text-center text-muted" style="display: none;">
+        <i class="fas fa-exclamation-circle me-2"></i>No hay resultados</li>    
+    </ul>
+    
+    <div id="cover-ctn-search"></div>
+
+    <h1 class="m-0 p-0">Mercados Artesanales</h1>
+
+    <nav class="m-0 p-0" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+      <ol class="breadcrumb m-0 p-0">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Mercados Artesanales</li>
+      </ol>
+    </nav>
+
+    <section class="container my-1">
+      <div class="row align-items-center">
+        
+        <div class="col-md-3 mb-4 mb-md-0">
+          <p style="color: black; font-family: Dancing Script, cursive; font-weight: 900; font-size: 20px;">
+            Para quienes buscan recuerdos únicos, Puebla es un paraíso de artesanía. El Mercado El Parián, en el corazón del centro histórico, ofrece una gran variedad de productos hechos a mano, como talavera poblana, textiles bordados, alebrijes y joyería artesanal. También destacan los trabajos en madera, papel amate y artículos decorativos que reflejan la riqueza cultural de la región. Es el lugar perfecto para adquirir piezas auténticas directamente de los artesanos.
+          </p>
+        </div>
+    
+        <div class="col-md-9">
+          <div id="carouselHoteles" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4 overflow-hidden shadow">
+              <div class="carousel-item active">
+                <img src="images/mercados/m6.png" class="d-block w-100" alt="Hotel 1" style="height: 400px; object-fit: cover;">
+              </div>
+              <div class="carousel-item">
+                <img src="images/mercados/m.jpg" class="d-block w-100" alt="Hotel 2" style="height: 400px; object-fit: cover;">
+              </div>
+              <div class="carousel-item">
+                <img src="images/mercados/m7.png" class="d-block w-100" alt="Hotel 3" style="height: 400px; object-fit: cover;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHoteles" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHoteles" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+    
+      </div>
+    </section>    
+    
+      <div class="section-title" id="zonasb">Más buscado</div>
+      <div class="zona-container position-relative">
+        <div class="zona-scroll d-flex overflow-auto flex-nowrap p-2">
+
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/mercados/m1.png" class="card-img-top" alt="Museo Amparo">
+            <div class="card-body d-flex flex-column">
+              <h6>El Parían</h6>
+              <p class="fs-6">En la antigua plazuela de San Roque encontrarás El Parián, un mercado de artesanías donde puedes adquirir lo mejor del arte popular poblano y mexicano a muy buenos precios.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#ParianModal">Ver Más</a>
+              <div class="modal fade" id="ParianModal" tabindex="-1" aria-labelledby="ParianLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="Parian">El Parían</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselParian" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/el parian/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/el parian/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/el parian/m2.jpeg" class="d-block w-100" style="height: 450px"alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/el parian/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEParian" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselParian" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>Alrededor de la estatua de San Francisco de Asís encontrarás puestos con dulces típicos, juguetes de madera, talavera y todo tipo de textiles provenientes de distintas localidades. Desde 1760, este espacio ya era conocido como punto de encuentro para todas las personas interesadas en adquirir artesanías y en degustar antojitos regionales.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4672250868953!2d-98.19585762604984!3d19.043184453004386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e650a29417%3A0x11077ba00041cd86!2sMercado%20de%20Artesan%C3%ADas%20El%20Pari%C3%A1n!5e0!3m2!1ses-419!2smx!4v1745816453351!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Mercado de artesanias El Parian local 111, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong> Lunes a domingo de 10:00 a 19:30 horas.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/mercados/m2.png" class="card-img-top" alt="Museo Amparo">
+            <div class="card-body d-flex flex-column">
+              <h6>Barrio del Artista</h6>
+              <p class="fs-6">El Barrio del Artista es un espacio artístico ubicado en la ciudad de Puebla de Zaragoza, en el estado de Puebla. Este lugar se encuentra en lo que se conoce como Plazuela del Torno o del Factor, donde los artistas trabajan y exponen sus obras a la vista de los turistas y ciudadanos que visitan el área.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#bArtModal">Ver Más</a>
+              <div class="modal fade" id="bArtModal" tabindex="-1" aria-labelledby="bArtLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="bArt">Barrio del Artista</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselbArt" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/barrio art/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/barrio art/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/barrio art/m2.png" class="d-block w-100" style="height: 450px"alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/barrio art/m3.png" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselbArt" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselbArt" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>La conformación de este barrio artístico surgió en la década de 1940, tras la Revolución, cuando en México era de gran importancia la formación de una nacionalidad e identidad, y los artistas formaban parte de uno de los gremios con mayor influencia sobre las masas, unificando así su trabajo artístico con una política nacional que buscaba rescatar el pasado indígena, influenciados por los muralistas de la década de los veinte, como José Clemente Orozco y David Alfaro Siqueiros.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4502046817242!2d-98.19481202604985!3d19.04393355298091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e5b76a1631%3A0xc2573bf1bb1a9eab!2sBarrio%20del%20Artista!5e0!3m2!1ses-419!2smx!4v1745817152553!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Blvd. Héroes del 5 de Mayo, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong> Lunes a Sábado de 10:00 a 19:00 horas y Domingo de 10:00 a 18:00 horas.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/mercados/m3.png" class="card-img-top" alt="Catedral de Puebla">
+            <div class="card-body d-flex flex-column">
+              <h6>Plaza John Lennon</h6>
+              <p class="fs-6">Este lugar es conocido por ser animado y es un punto de encuentro para turistas y artesanos, donde se pueden encontrar desde libros hasta artesanías y tatuajes temporales.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#pJLModal">Ver Más</a>
+              <div class="modal fade" id="pJLModal" tabindex="-1" aria-labelledby="pJLLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="pJL">Plaza John Lennon</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselpJL" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/plaza jl/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/plaza jl/m1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/plaza jl/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/plaza jl/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselpJL" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselpJL" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>El lugar se convierte en un mercado donde puedes encontrar una variedad de artesanías, como trenzas, libros, collares, prendas, pulseras, bolsas y más. Además, hay un tianguis artesanal que crea un espacio ideal para pasear y comprar.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.494536820661!2d-98.19831832604987!3d19.041982353042002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc153d2532391%3A0xa7585e117ee01e21!2sCallej%C3%B3n%20John%20Lennon!5e0!3m2!1ses-419!2smx!4v1745817899587!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Calle 3 Ote., Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong>  Lunes a Domingo de 9:00 a 20:00 horas.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/mercados/m4.png" class="card-img-top" alt="Acuario Michin">
+            <div class="card-body  d-flex flex-column">
+              <h6>Callejón y Plazuela de Los Sapos</h6>
+              <p class="fs-6">Este lugar es conocido por sus coloridas fachadas y por albergar bazares de antigüedades, restaurantes y bares. Los domingos, se instala un tianguis que se ha convertido en una tradición, donde se pueden encontrar antigüedades, artesanías y objetos de arte.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#cSaposModal">Ver Más</a>
+              <div class="modal fade" id="cSaposModal" tabindex="-1" aria-labelledby="cSaposLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="cSapos">Callejón y Plazuela de Los Sapos</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselcSapos" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/callejon sapos/m.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/callejon sapos/m1.png" class="d-block w-100" style="height: 450px"alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/callejon sapos/m2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/callejon sapos/m3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselcSapos" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselcSapos" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>La Plazuela de los Sapos, ubicada en el mismo barrio, es un espacio donde los fines de semana por la noche se llena de música en vivo, ofreciendo un ambiente agradable para disfrutar de la música y la gastronomía local. La fuente en el centro de la plazuela y la leyenda de los sapos que dieron nombre al lugar son atractivos adicionales para los visitantes.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5223535041864!2d-98.19905302604994!3d19.040757953080465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0dd66e54707%3A0x71e9a006a0b22117!2sCallej%C3%B3n%20de%20los%20Sapos!5e0!3m2!1ses-419!2smx!4v1746002156066!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> México 6, México 83, 72017 Heroica Puebla de Zaragoza, Pue.</p>
+                            <p><strong>Horario:</strong> 	Abierto las 24 horas.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+          <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+            <img src="images/mercados/m12.png" class="card-img-top" alt="Museo del Barroco">
+            <div class="card-body d-flex flex-column">
+              <h6>Barrio de Analco</h6>
+              <p class="fs-6">El Barrio de Analco es uno de los barrios históricos más antiguos de la ciudad de Puebla, México, ubicado al otro lado del río San Francisco. Su nombre en náhuatl significa "al otro lado del río". Este barrio fue fundado después de la fundación de la ciudad y se establecieron allí los indígenas tlaxcaltecas. Sus calles empedradas y edificios coloniales son atractivos que transportan a diferentes épocas de la historia de la ciudad.</p>
+              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#analcoModal">Ver Más</a>
+              <div class="modal fade" id="analcoModal" tabindex="-1" aria-labelledby="analcoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="analco">Barrio de Analco</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <div id="carouselanalco" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/analco/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/analco/m1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/analco/m2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/analco/m3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselanalco" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselanalco" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <h5>Descripción:</h5>
+                          <p>El Barrio de Analco en Puebla es conocido por ser un lugar donde se pueden encontrar diversas artesanías y antigüedades. Cada domingo se instala un tianguis donde los visitantes pueden comprar artesanías, juguetes, ropa, muebles y otras variedades. Además, el tianguis ofrece múltiples opciones para degustar platillos típicos, antojitos, frutas, bebidas y golosinas. Este espacio es considerado ideal para encontrar artesanías de toda clase y es un lugar de convivencia y deleite de productos.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7543.220657450817!2d-98.196846512894!3d19.03688507074375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0eee08bff4b%3A0x490b3db638ded79c!2sBarrio%20de%20Analco%2C%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1746003652683!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <div class="mt-3">
+                            <p><strong>Ubicación:</strong> Aproximadamente 5 Oriente con Esquina 10 sur, a la derecha se encuentra el Parque de Analco con algunos comerciantes, y a la izquierda el Templo del Santo Ángel Custodio.</p>
+                            <p><strong>Horario:</strong>Sábados y Domingos de 10:00 AM a 6:00 PM.</p>
+                          </div>
+                        </div>
+                      </div>           
+                        
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+              
+                    
+                    <div class="card me-3 zona-card d-flex flex-column" style="min-width: 250px;">
+                      <img src="images/mercado antig/m1.jpg" class="card-img-top" alt="Catedral de Puebla">
+                      <div class="card-body d-flex flex-column">
+                        <h6>Mercado de Antigüedades</h6>
+                        <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident ducimus unde voluptatum...</p>
+                        <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#mAntModal">Ver Más</a>
+                        <div class="modal fade" id="mAntModal" tabindex="-1" aria-labelledby="mAntLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h2 class="modal-title" id="mAnt">Mercado de Antigüedades</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                              </div>
+                              <div class="modal-body">
+                        
+                        
+                                <div id="carouselmAnt" class="carousel slide carousel-fade">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="images/mercado antig/m.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="images/mercado antig/m2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="images/mercado antig/m3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="images/mercado antig/m4.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                                    </div>
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselmAnt" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselmAnt" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                                </div>
+                            
+                                
+                                <div class="row mt-4">
+                                  <div class="col-md-6">
+                                    <h5>Descripción:</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint repellat enim unde corrupti libero voluptatem ad culpa cupiditate, ut amet sapiente molestiae et dolorum odit natus dolores consequuntur minus maxime!</p>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.4402654370597!2d-98.1966162322919!3d19.040768077582793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc1e62d5bfc97%3A0xcb807200cf403424!2sBazar%20San%20Cristobal!5e0!3m2!1ses-419!2smx!4v1746338701115!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <div class="mt-3">
+                                      <p><strong>Ubicación:</strong> C. 6 Sur 503-Local "B, Los sapos, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                                      <p><strong>Horario:</strong> Lunes a Domingos de 10:30-16:30 hrs.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                        
+                                
+                               
+                        
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+           
+
+        </div>
+      </div>
+
+       
+  
+      <div class="section-title" id="zonasr">Recomendado</div>
+      <br><br>
+      <div class="row g-5">
+
+        <div class="col-md-12 d-flex recom">
+            <img src="images/mercados/m9.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Corredor Artesanal San Andrés Cholula</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Corredor Artesanal "Interconectando Culturas" de San Andrés Cholula se instaló en el Aeropuerto Internacional de Puebla. Esta iniciativa tiene como objetivo exponer la riqueza cultural de San Andrés Cholula al público.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#mCholModal">Ver detalles</button>
+            <div class="modal fade" id="mCholModal" tabindex="-1" aria-labelledby="mCholLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="mChol">Corredor Artesanal San Andrés Cholula</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmChol" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/corredor cholula/m.jpg" class="d-block w-100" style="height: 400px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/corredor cholula/m1.avif" class="d-block w-100" style="height: 400px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/corredor cholula/m2.avif" class="d-block w-100" style="height: 400px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/corredor cholula/m3.jpg" class="d-block w-100" style="height: 400px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmChol" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmChol" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Estos artesanos ofrecen productos hechos con materiales que se consiguen en la región, incluyendo piezas elaboradas con botellas de vidrio reutilizadas.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.118256376814!2d-98.3017634260494!3d19.058537552522978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc74117565491%3A0xd8d6a3aa160efdf!2sCORREDOR%20ARTESANAL%20DE%20SAN%20ANDR%C3%89S%20CHOLULA!5e0!3m2!1ses-419!2smx!4v1745820996539!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> C. 14 Pte. 307A, San Miguel, San Juan Aquiahuac, 72810 San Andrés Cholula, Pue.</p>
+                          <p><strong>Horario:</strong> Fines de semana de 10:00 a 18:00 horas.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/mercados/m10.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Palma Ancestral</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>En Puebla, el tejido de palma es una técnica que ha sido preservada y valorada, formando parte importante del patrimonio cultural. Se utiliza para crear diversos objetos, desde cestas y sombreros hasta elementos decorativos y utilitarios. Además, el Museo Regional de Puebla atesora piezas de tejido de palma que reflejan la rica historia y tradición de esta técnica.</p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#mPalModal">Ver detalles</button>
+            <div class="modal fade" id="mPalModal" tabindex="-1" aria-labelledby="mPalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="mPal">Palma Ancestral</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmPal" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/mercado palma/m.jpg" class="d-block w-100" style="height: 400px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/mercado palma/m1.jpg" class="d-block w-100" style="height: 400px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/mercado palma/m2.jpg" class="d-block w-100" style="height: 400px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/mercado palma/m3.jpg" class="d-block w-100" style="height: 400px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmPal" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmPal" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>El tejido de palma no solo es una expresión artesanal, sino también un testimonio de la adaptación y creatividad de las comunidades indígenas de Puebla, quienes han mantenido viva esta tradición a pesar de los cambios y desafíos a lo largo del tiempo.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.7784762217216!2d-98.41176023020525!3d19.161171709671766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfcd003ce85f9b%3A0xa223e723c653f0dc!2sPalma%20Ancestral!5e0!3m2!1ses-419!2smx!4v1745822369025!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> Pl. San Diego 8A, Tercero, Tercer Barrio, 74160 Huejotzingo, Pue.</p>
+                          <p><strong>Horario:</strong> Lunes a domingo de 9:00 a 14:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-md-12 d-flex recom">
+            <img src="images/mercados/m11.png" class="img-fluid me-4" alt="">
+            <div>
+              <h6>Mercado Artesanal Kankenami</h6>
+              <div class="star-rating">★★★★★</div>
+              <p>El Mercado Artesanal Kankenami se encuentra en Atlixco, Puebla. </p>
+              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#mKanModal">Ver detalles</button>
+            <div class="modal fade" id="mKanModal" tabindex="-1" aria-labelledby="mKanLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="mKan">Mercado Artesanal Kankenami</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+            
+            
+                    <div id="carouselmKan" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/mercado kankenami/m.jpg" class="d-block w-100" style="height: 400px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/mercado kankenami/m1.webp" class="d-block w-100" style="height: 400px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/mercado kankenami/m2.webp" class="d-block w-100" style="height: 400px"alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/mercado kankenami/m3.webp" class="d-block w-100" style="height: 400px" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmKan" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselmKan" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                
+                    
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <h5>Descripción:</h5>
+                        <p>Es un mercado creado para promover el crecimiento y la difusión de los productores, artesanos y negocios de la región, y opera los sábados y domingos durante todo el año. En este mercado, puedes encontrar una variedad de productos artesanales, como artículos de cuero, joyería, cerámica y madera.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120783.42803225029!2d-98.5782199566406!3d18.910042200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb47b763bcd53%3A0x238ca3af079d406c!2sMercado%20artesanal%20sustentable%20Kankenami%20Atlixco!5e0!3m2!1ses-419!2smx!4v1745821788405!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mt-3">
+                          <p><strong>Ubicación:</strong> C. 2 Ote. 3-5, Centro, 74200 Atlixco, Pue.</p>
+                          <p><strong>Horario:</strong> Sábado y Domingo de 11:00 a 20:00 hrs.</p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 d-flex recom">
+          <img src="images/mercado cholula/m.jpg" class="img-fluid me-4" alt="">
+          <div>
+            <h6>Mercado Artesanal Cholula</h6>
+            <div class="star-rating">★★★★★</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cupiditate impedit tempore error optio placeat eius blanditiis aliquid nostrum assumenda, ad, in aspernatur unde officia. Velit suscipit ipsa quo nobis.</p>
+            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#merCholModal">Ver detalles</button>
+          <div class="modal fade" id="merCholModal" tabindex="-1" aria-labelledby="merCholLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="merChol">Mercado Artesanal Cholula</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+          
+          
+                  <div id="carouselmerChol" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/mercado cholula/m1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/mercado cholula/m2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/mercado cholula/m3.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/mercado cholula/m4.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmerChol" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmerChol" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              
+                  
+                  <div class="row mt-4">
+                    <div class="col-md-6">
+                      <h5>Descripción:</h5>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint repellat enim unde corrupti libero voluptatem ad culpa cupiditate, ut amet sapiente molestiae et dolorum odit natus dolores consequuntur minus maxime!</p>
+                    </div>
+                    <div class="col-md-6">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0842192525624!2d-98.30292209999999!3d19.0600344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc62f51368363%3A0xb7e7d5ec26236670!2sMERCADO%20DE%20ARTESANIAS!5e0!3m2!1ses-419!2smx!4v1746339749821!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <div class="mt-3">
+                        <p><strong>Ubicación:</strong> Entre Calle 6 Norte y Calle 4 Norte, Av. Morelos 414, Centro, 72760 Cholula de Rivadavia, Pue.</p>
+                        <p><strong>Horario:</strong> Lunes a Sábado de 10:00 a 19:00 horas. </p>
+                      </div>
+                    </div>
+                  </div>
+            
+                    
+                   
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  
+      <br><br>
+
+      <section class="bg-info py-5 text-white" id="contacto">
+        <div class="container text-center">
+          <h2 class="mb-4">Síguenos en redes sociales</h2>
+          <p>Conéctate con nosotros para descubrir más sobre los lugares turísticos de Puebla.</p>
+      
+          <div class="d-flex justify-content-center gap-4 mt-4">
+      
+            <a href="https://www.facebook.com/share/1EWMUQmWFf/" target="_blank" class="text-white fs-2">
+              <i class="bi bi-facebook"></i>
+            </a>
+      
+            <a href="https://www.instagram.com/tupuebla.w?igsh=YzJxNXc4bDM5ZWJy" target="_blank" class="text-white fs-2">
+              <i class="bi bi-instagram"></i>
+            </a>
+      
+            <a href="https://wa.me/5212215705356" target="_blank" class="text-white fs-2">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+      
+          </div>
+        </div>
+      </section>
+
+  <div class="text-end mt-2 subir">
+    <a href="#" class="btn btn-link"><button class="btn btn-primary" type="submit" style="border-color: white; color: white;">Regresar</button></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+</body>
+  </html>
