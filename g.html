@@ -28,13 +28,15 @@
 
 <body>
    
-  <div class="logo img-fluid" style="text-align: left;">
-        <a href="index.html"><img src="images/tupuebla.jpeg" alt="Logo Puebla"></a>
-      </div>
+  <div class="logo text-center text-lg-start ps-lg-5">
+      <a href="index.html">
+      <img src="images/tupuebla.jpeg" alt="Logo Puebla" class="img-fluid">
+      </a>
+    </div>
 
     <header> 
         <div class="container py-3">
-            <nav class="navbar navbar-expand-lg navbar dark" >
+            <nav class="navbar navbar-expand-lg navbar-dark" >
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,11 +64,11 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link active" href="#contacto">Contacto</a>
                       </li> 
                     </ul>
                     <button id="btnSearch" class="btn btn-light">
-                      <i class="fas fa-search"></i>
+                      <i class="bi bi-search"></i>
                       </button>
                   </div>
                 </div>
@@ -75,12 +77,12 @@
     </header>
 
     <div id="cont-bars-search">
-      <div class="container">
-        <input type="text" id="inputSearch" class="form-control form-control-lg rounded-pill" placeholder="Buscar...">
-      </div>
+    <div class="container">
+      <input type="text" id="inputSearch" class="form-control form-control-lg rounded-pill" placeholder="Buscar...">
     </div>
+  </div>
     
-    <ul id="box-search" class="list-group"  style="top: 170px;; max-width: 800px; width: 90%">
+    <ul id="box-search" class="list-group rounded-sm"  style="top: 170px;; max-width: 800px; width: 90%">
       <li class="list-group-item"><a href="h.html"><i class="fas fa-search me-2"></i>Hoteles</a></li>
       <li class="list-group-item"><a href="m.html"><i class="fas fa-search me-2"></i>Mercados artesanales</a></li>
       <li class="list-group-item"><a href="z.html"><i class="fas fa-search me-2"></i>Zonas turísticas</a></li>
@@ -92,36 +94,42 @@
     
     <div id="cover-ctn-search"></div>
     
-    <h1 class="m-0 p-0">Gastronomía</h1>
+    <h1 class="m-1 p-0">Gastronomía</h1>
 
     <nav class="m-0 p-0" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-      <ol class="breadcrumb m-0 p-0">
-        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Gastronomía</li>
-      </ol>
-    </nav>
+    <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ol class="breadcrumb m-0 p-2 p-md-0">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Gastronomía</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</nav>
 
 
-    <section class="container my-1">
+    <section class="container my-4">
       <div class="row align-items-center">
         
-        <div class="col-md-3 mb-4 mb-md-0">
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
           <p style="color: black; font-family: Dancing Script, cursive; font-weight: 900; font-size: 20px;">
             La gastronomía de Puebla es una de las más reconocidas de México. Platillos como el mole poblano, los chiles en nogada, el pipián, las chalupas y las cemitas poblanas representan siglos de tradición culinaria mestiza. En el centro de la ciudad abundan los restaurantes tradicionales y modernos que ofrecen desde comida típica hasta reinterpretaciones gourmet. Además, no puede faltar una visita a los mercados locales para probar antojitos auténticos como tacos árabes o molotes.
           </p>
         </div>
     
-        <div class="col-md-9">
+        <div class="col-12 col-md-6">
           <div id="carouselHoteles" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner rounded-4 overflow-hidden shadow">
               <div class="carousel-item active">
-                <img src="images/c.jpg" class="d-block w-100" alt="Hotel 1" style="height: 400px; object-fit: cover;">
+                <img src="images/c.jpg" class="d-block w-100 hotel-img" alt="Hotel 1">
               </div>
               <div class="carousel-item">
-                <img src="images/t.jpg" class="d-block w-100" alt="Hotel 2" style="height: 400px; object-fit: cover;">
+                <img src="images/t.jpg" class="d-block w-100 hotel-img" alt="Hotel 2">
               </div>
               <div class="carousel-item">
-                <img src="images/m.webp" class="d-block w-100" alt="Hotel 3" style="height: 400px; object-fit: cover;">
+                <img src="images/m.webp" class="d-block w-100 hotel-img" alt="Hotel 3">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselHoteles" data-bs-slide="prev">
@@ -147,7 +155,7 @@
             <div class="card-body d-flex flex-column">
               <h6>El mural de los poblanos</h6>
               <p>Este establecimiento está abierto todos los días desde las 8 hasta las 24 horas. El restaurante cuenta con una amplia variedad de platillos típicos, destacando el auténtico mole poblano, mezcales, más de 100 etiquetas de vino mexicano, pulque, insectos y chiles en nogada.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#mPobModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#mPobModal">Ver Más</a>
               <div class="modal fade" id="mPobModal" tabindex="-1" aria-labelledby="mPobLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -161,16 +169,16 @@
                       <div id="carouselmPob" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/mural poblanos/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/mural poblanos/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/mural poblanos/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/mural poblanos/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/mural poblanos/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/mural poblanos/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/mural poblanos/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/mural poblanos/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselmPob" data-bs-slide="prev">
@@ -194,6 +202,9 @@
                           <div class="mt-3">
                             <p><strong>Ubicación:</strong> C. 16 de Septiembre 506, Centro, 72000 Heroica Puebla de Zaragoza, Pue.</p>
                             <p><strong>Horario:</strong> Abierto todos los días de 08:00 a 00:00, se cierra cuando se retira el último comensal.</p>
+                            <a href="http://elmuraldelospoblanos.com/" target="_blank" class="btn btn-primary mt-2">
+                            <i class="bi bi-globe"></i> Sitio oficial
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -215,7 +226,7 @@
             <div class="card-body d-flex flex-column">
               <h6>Porfirio’s</h6>
               <p>El restaurante es conocido por su excelente servicio y atención al cliente, así como por su ambiente agradable y su música. Porfirio's es también un lugar ideal para organizar eventos privados para más de 200 personas, ofreciendo una experiencia única llena de música, colores y sabores tradicionales de Puebla.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#PorfModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#PorfModal">Ver Más</a>
               <div class="modal fade" id="PorfModal" tabindex="-1" aria-labelledby="PorfLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -229,16 +240,16 @@
                       <div id="carouselPorf" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/porfirio's/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/porfirio's/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/porfirio's/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/porfirio's/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/porfirio's/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/porfirio's/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/porfirio's/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/porfirio's/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselPorf" data-bs-slide="prev">
@@ -282,7 +293,7 @@
             <div class="card-body d-flex flex-column">
               <h6>Sonora Grill</h6>
               <p>El restaurante tiene instalaciones para eventos privados y es un lugar adecuado para las familias, con ludotecas y menú infantil.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#SonModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#SonModal">Ver Más</a>
               <div class="modal fade" id="SonModal" tabindex="-1" aria-labelledby="SonLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -296,16 +307,16 @@
                       <div id="carouselSon" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/sonora grill/r2.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/sonora grill/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/sonora grill/r.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/sonora grill/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/sonora grill/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/sonora grill/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/sonora grill/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/sonora grill/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselSon" data-bs-slide="prev">
@@ -349,7 +360,7 @@
             <div class="card-body d-flex flex-column">
               <h6>La Noria</h6>
               <p>El Restaurante La Noria es un establecimiento gastronómico ubicado en Puebla, México, que combina arte, diseño y la rica gastronomía poblana. Este restaurante ofrece una experiencia única que celebra la cultura y la cocina local, con un enfoque en la tradición culinaria de Puebla. La carta es fiel representante de la cocina tradicional, destacando platos como los chiles en nogada meticulosamente elaborados y los moles ancestrales, que cuentan la historia de generaciones dedicadas a perfeccionar estas recetas.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#lanoriaModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#lanoriaModal">Ver Más</a>
               <div class="modal fade" id="lanoriaModal" tabindex="-1" aria-labelledby="lanoriaLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -363,16 +374,16 @@
                       <div id="carousellanoria" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/la noria/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/la noria/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/la noria/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/la noria/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/la noria/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/la noria/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/la noria/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/la noria/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousellanoria" data-bs-slide="prev">
@@ -418,7 +429,7 @@
             <div class="card-body d-flex flex-column">
               <h6>La Estancia Argentina - Angelopolis</h6>
               <p>Este establecimiento se destaca por su especialidad en cortes de carne premium y su gastronomía argentina.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#estanAModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#estanAModal">Ver Más</a>
               <div class="modal fade" id="estanAModal" tabindex="-1" aria-labelledby="estanALabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -432,16 +443,16 @@
                       <div id="carouselestanA" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/estancia argentina/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/estancia argentina/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/estancia argentina/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/estancia argentina/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/estancia argentina/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/estancia argentina/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/estancia argentina/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/estancia argentina/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselestanA" data-bs-slide="prev">
@@ -485,7 +496,7 @@
             <div class="card-body d-flex flex-column">
               <h6>Bistro 702</h6>
               <p>El restaurante ofrece un menú variado con opciones de desayuno, almuerzo y cena, y es conocido por sus productos frescos y de alta calidad. Bistro 702 tiene un rango de precios que va desde $$ hasta $$$, lo que indica que ofrece opciones tanto asequibles como más lujosas.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#bistroModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#bistroModal">Ver Más</a>
               <div class="modal fade" id="bistroModal" tabindex="-1" aria-labelledby="bistroLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -499,16 +510,16 @@
                       <div id="carouselbistro" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/bistro/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/bistro/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/bistro/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/bistro/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/bistro/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/bistro/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/bistro/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/bistro/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselbistro" data-bs-slide="prev">
@@ -552,14 +563,27 @@
   
       <div class="section-title" id="zonasr">Recomendado</div>
       <br><br>
-      <div class="row g-5">
-        <div class="col-md-12 d-flex recom">
-          <img src="images/r5.png" class="img-fluid me-4" alt="">
+      <div class="container py-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r5.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
           <div>
             <h6>Suntory</h6>
             <div class="star-rating">★★★★★</div>
             <p>El restaurante cuenta con un horario de apertura que varía según el día de la semana, abriendo a las 01 y cerrando entre las 21 y las 23, dependiendo del día.</p>
-            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#SunModal">Ver detalles</button>
+            </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#SunModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
             <div class="modal fade" id="SunModal" tabindex="-1" aria-labelledby="SunLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -573,16 +597,16 @@
                     <div id="carouselSun" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/suntory/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/suntory/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/suntory/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/suntory/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/suntory/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/suntory/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/suntory/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/suntory/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselSun" data-bs-slide="prev">
@@ -606,6 +630,9 @@
                         <div class="mt-3">
                           <p><strong>Ubicación:</strong> Atlixcáyotl 4913, Reserva Territorial Atlixcáyotl, Centros Comerciales Desarrollo Atlixcayotl, 72193 Heroica Puebla de Zaragoza, Pue.</p>
                           <p><strong>Horario:</strong><br> Lunes a Jueves de 13:00 a 23:00 horas.<br> Viernes y Sábado de 13:00 a 23:30 horas.<br> Domingo de 13:00 a 21:00 horas.</p>
+                          <a href="https://suntory.com.mx/" target="_blank" class="btn btn-primary mt-2">
+                            <i class="bi bi-globe"></i> Sitio oficial
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -620,16 +647,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-md-12 d-flex recom">
-            <img src="images/r6.png" class="img-fluid me-4" alt="">
-            <div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r6.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>Sonora Prime Av. Juárez</h6>
               <div class="star-rating">★★★★★</div>
               <p>Es un restaurante de alta gama especializado en cortes de carne premium y cocina mexicana.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#SonJModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#SonJModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="SonJModal" tabindex="-1" aria-labelledby="SonJLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -643,16 +681,16 @@
                     <div id="carouselSonJ" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/son J/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/son J/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/son J/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/son J/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/son J/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/son J/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/son J/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/son J/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselSonJ" data-bs-slide="prev">
@@ -690,47 +728,57 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r7.png" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r7.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>Mochomos</h6>
               <div class="star-rating">★★★★★</div>
               <p>El menú incluye una variedad de platos, entre ellos cortes de carne de alta calidad, mariscos frescos, ensaladas gourmet y platos diseñados para deleitar el paladar.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoAlfModal">Ver detalles</button>
-            <div class="modal fade" id="museoAlfModal" tabindex="-1" aria-labelledby="museoAlfLabel" aria-hidden="true">
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#MochModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+            <div class="modal fade" id="MochModal" tabindex="-1" aria-labelledby="MochLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h2 class="modal-title" id="museoAlf">Mochomos</h2>
+                    <h2 class="modal-title" id="Moch">Mochomos</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                   </div>
                   <div class="modal-body">
             
             
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div id="carouselMoch" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/mochomos/r.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/mochomos/r.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/mochomos/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/mochomos/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/mochomos/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/mochomos/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/mochomos/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/mochomos/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMoch" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselMoch" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
@@ -761,16 +809,26 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r8.png" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r8.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>Nereo</h6>
               <div class="star-rating">★★★★★</div>
               <p>Los visitantes destacan la calidad de los platos, la atención al detalle y el ambiente acogedor.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#nereoModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#nereoModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
               <div class="modal fade" id="nereoModal" tabindex="-1" aria-labelledby="nereoLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -784,16 +842,16 @@
                       <div id="carouselnereo" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/nereo/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/nereo/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/nereo/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/nereo/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/nereo/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/nereo/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/nereo/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/nereo/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselnereo" data-bs-slide="prev">
@@ -831,17 +889,27 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r9.png" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r9.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>El Parrillaje Juárez</h6>
               <div class="star-rating">★★★★★</div>
               <p>Es un restaurante especializado en cortes de carne, pescados y mariscos de alta calidad ubicado en Puebla, México.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#pJuarezModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#pJuarezModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="pJuarezModal" tabindex="-1" aria-labelledby="pJuarezLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -855,16 +923,16 @@
                     <div id="carouselpJuarez" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/parrillaje J/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/parrillaje J/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/parrillaje J/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/parrillaje J/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/parrillaje J/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/parrillaje J/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/parrillaje J/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/parrillaje J/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselpJuarez" data-bs-slide="prev">
@@ -902,16 +970,26 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r12.webp" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r12.webp" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>Casareyna</h6>
               <div class="star-rating">★★★★★</div>
               <p>Casareyna se especializa en la cocina antigua poblana, con recetas heredadas de generación en generación y ingredientes de la más alta calidad.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#casarModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#casarModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="casarModal" tabindex="-1" aria-labelledby="casarLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -925,16 +1003,16 @@
                     <div id="carouselcasar" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/casareyna/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/casareyna/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/casareyna/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/casareyna/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/casareyna/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/casareyna/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/casareyna/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/casareyna/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselcasar" data-bs-slide="prev">
@@ -973,22 +1051,31 @@
               </div>
             </div>
           </div>
-        </div>
-        </div>
   
       <br><br>
 
       <div class="section-title" id="platillos">Restaurantes con Platillos Típicos</div>
       <br><br>
-      <div class="row g-5">
-        
-        <div class="col-md-12 d-flex recom">
-          <img src="images/r4.png" class="img-fluid me-4" alt="">
+      <div class="container py-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r4.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
           <div>
             <h6>La Noria</h6>
             <div class="star-rating">★★★★★</div>
             <p>El Restaurante La Noria es un establecimiento gastronómico ubicado en Puebla, México, que combina arte, diseño y la rica gastronomía poblana. Este restaurante ofrece una experiencia única que celebra la cultura y la cocina local, con un enfoque en la tradición culinaria de Puebla. La carta es fiel representante de la cocina tradicional, destacando platos como los chiles en nogada meticulosamente elaborados y los moles ancestrales, que cuentan la historia de generaciones dedicadas a perfeccionar estas recetas.</p>
-            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#lanoriaModal">Ver detalles</button>
+            </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#lanoriaModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="lanoriaModal" tabindex="-1" aria-labelledby="lanoriaLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1002,16 +1089,16 @@
                     <div id="carousellanoria" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/la noria/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/la noria/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/la noria/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/la noria/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/la noria/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/la noria/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/la noria/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/la noria/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carousellanoria" data-bs-slide="prev">
@@ -1035,6 +1122,9 @@
                         <div class="mt-3">
                           <p><strong>Ubicación:</strong> 41 poniente y 23 sur, La Noria, 72410 Heroica Puebla de Zaragoza, Pue.</p>
                           <p><strong>Horario:</strong><br> Desayuno:<br> Lun–Vie: 08:00–12:00 horas. <br>Sáb-Dom: 09:00–13:00 horas. <br><br>Almuerzo:<br> Lun–Sáb: 13:30–18:00 horas. <br>Dom: 13:30–19:00 horas.<br><br> Cena:<br> Lun–Mie: 18:00–23:00 horas. <br>Jue–Sáb: 18:00–23:30 horas.</p>
+                          <a href="https://www.restaurantelanoria.com/" target="_blank" class="btn btn-primary mt-2">
+                            <i class="bi bi-globe"></i> Sitio oficial
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -1047,17 +1137,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r12.webp" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r12.webp" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>Casareyna</h6>
               <div class="star-rating">★★★★★</div>
               <p>Casareyna se especializa en la cocina antigua poblana, con recetas heredadas de generación en generación y ingredientes de la más alta calidad.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#casarModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#casarModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
             <div class="modal fade" id="casarModal" tabindex="-1" aria-labelledby="casarLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1071,16 +1171,16 @@
                     <div id="carouselcasar" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/casareyna/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/casareyna/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/casareyna/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/casareyna/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/casareyna/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/casareyna/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/casareyna/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/casareyna/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselcasar" data-bs-slide="prev">
@@ -1117,16 +1217,26 @@
                 </div>
               </div>
             </div>
-          </div>
-          </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r1.png" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r1.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>El mural de los poblanos</h6>
               <div class="star-rating">★★★★★</div>
               <p>Este establecimiento está abierto todos los días desde las 8 hasta las 24 horas. El restaurante cuenta con una amplia variedad de platillos típicos, destacando el auténtico mole poblano, mezcales, más de 100 etiquetas de vino mexicano, pulque, insectos y chiles en nogada.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#mPobModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#mPobModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
               <div class="modal fade" id="mPobModal" tabindex="-1" aria-labelledby="mPobLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -1140,16 +1250,16 @@
                       <div id="carouselmPob" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/mural poblanos/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/mural poblanos/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/mural poblanos/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/mural poblanos/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/mural poblanos/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/mural poblanos/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/mural poblanos/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/mural poblanos/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselmPob" data-bs-slide="prev">
@@ -1185,10 +1295,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          
         </div>
         
 
@@ -1196,15 +1302,26 @@
 
       <div class="section-title" id="inter">Restaurantes con Gastronomía Internacional</div>
       <br><br>
-      <div class="row g-5">
-
-        <div class="col-md-12 d-flex recom">
-          <img src="images/r2.png" class="img-fluid me-4" alt="">
+      <div class="container py-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r2.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
           <div>
             <h6>Porfirio’s</h6>
             <div class="star-rating">★★★★★</div>
             <p>El restaurante es conocido por su excelente servicio y atención al cliente, así como por su ambiente agradable y su música. Porfirio's es también un lugar ideal para organizar eventos privados para más de 200 personas, ofreciendo una experiencia única llena de música, colores y sabores tradicionales de Puebla.</p>
-            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#PorfModal">Ver detalles</button>
+            </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#PorfModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="PorfModal" tabindex="-1" aria-labelledby="PorfLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1218,16 +1335,16 @@
                     <div id="carouselPorf" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/porfirio's/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/porfirio's/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/porfirio's/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/porfirio's/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/porfirio's/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/porfirio's/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/porfirio's/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/porfirio's/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselPorf" data-bs-slide="prev">
@@ -1251,6 +1368,9 @@
                         <div class="mt-3">
                           <p><strong>Ubicación:</strong> Colonia, Lote 1 Desarrollo Urbano SB 1-2, Centro Comercial Angelopolis, 72193 Heroica Puebla de Zaragoza, Pue.</p>
                           <p><strong>Horario:</strong><br> Martes a Sábado de 13:00 pm a 1:00 am horas.<br> Domingo y Lunes de 13:00 pm a 11:00 pm horas.</p>
+                          <a href="https://porfirios.com.mx/" target="_blank" class="btn btn-primary mt-2">
+                            <i class="bi bi-globe"></i> Sitio oficial
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -1263,17 +1383,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
 
-        <div class="col-md-12 d-flex recom">
-          <img src="images/r5.png" class="img-fluid me-4" alt="">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r5.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
           <div>
             <h6>Suntory</h6>
             <div class="star-rating">★★★★★</div>
             <p>El restaurante cuenta con un horario de apertura que varía según el día de la semana, abriendo a las 01 y cerrando entre las 21 y las 23, dependiendo del día.</p>
-            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#SunModal">Ver detalles</button>
+            </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#SunModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="SunModal" tabindex="-1" aria-labelledby="SunLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1287,16 +1417,16 @@
                     <div id="carouselSun" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/suntory/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/suntory/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/suntory/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/suntory/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/suntory/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/suntory/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/suntory/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/suntory/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselSun" data-bs-slide="prev">
@@ -1334,17 +1464,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
 
-        <div class="col-md-12 d-flex recom">
-          <img src="images/r2.png" class="img-fluid me-4" alt="">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r3.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
           <div>
             <h6>Sonora Grill</h6>
             <div class="star-rating">★★★★★</div>
             <p>El restaurante tiene instalaciones para eventos privados y es un lugar adecuado para las familias, con ludotecas y menú infantil.</p>
-            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#SonModal">Ver detalles</button>
+            </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#SonModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="SonModal" tabindex="-1" aria-labelledby="SonLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1358,16 +1498,16 @@
                     <div id="carouselSon" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/sonora grill/r2.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/sonora grill/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/sonora grill/r.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/sonora grill/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/sonora grill/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/sonora grill/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/sonora grill/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/sonora grill/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselSon" data-bs-slide="prev">
@@ -1403,18 +1543,26 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        
 
-
-        <div class="col-md-12 d-flex recom">
-            <img src="images/r6.png" class="img-fluid me-4" alt="">
-            <div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r6.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>Sonora Prime Av. Juárez</h6>
               <div class="star-rating">★★★★★</div>
               <p>Es un restaurante de alta gama especializado en cortes de carne premium y cocina mexicana.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#SonJModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#SonJModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="SonJModal" tabindex="-1" aria-labelledby="SonJLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1428,16 +1576,16 @@
                     <div id="carouselSonJ" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/son J/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/son J/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/son J/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/son J/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/son J/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/son J/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/son J/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/son J/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselSonJ" data-bs-slide="prev">
@@ -1475,47 +1623,57 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r7.png" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r7.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>Mochomos</h6>
               <div class="star-rating">★★★★★</div>
               <p>El menú incluye una variedad de platos, entre ellos cortes de carne de alta calidad, mariscos frescos, ensaladas gourmet y platos diseñados para deleitar el paladar.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#museoAlfModal">Ver detalles</button>
-            <div class="modal fade" id="museoAlfModal" tabindex="-1" aria-labelledby="museoAlfLabel" aria-hidden="true">
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#MochModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+            <div class="modal fade" id="MochModal" tabindex="-1" aria-labelledby="MochLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h2 class="modal-title" id="museoAlf">Mochomos</h2>
+                    <h2 class="modal-title" id="Moch">Mochomos</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                   </div>
                   <div class="modal-body">
             
             
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div id="carouselMoch" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/mochomos/r.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/mochomos/r.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/mochomos/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/mochomos/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/mochomos/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/mochomos/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/mochomos/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/mochomos/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMoch" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselMoch" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
@@ -1546,17 +1704,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
 
-        <div class="col-md-12 d-flex recom">
-          <img src="images/r11.webp" class="img-fluid me-4" alt="">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r11.webp" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
           <div>
         <h6>Bistro 702</h6>
         <div class="star-rating">★★★★★</div>
         <p>El restaurante ofrece un menú variado con opciones de desayuno, almuerzo y cena, y es conocido por sus productos frescos y de alta calidad. Bistro 702 tiene un rango de precios que va desde $$ hasta $$$, lo que indica que ofrece opciones tanto asequibles como más lujosas.</p>
-        <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#bistroModal">Ver detalles</button>
+        </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#bistroModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
         <div class="modal fade" id="bistroModal" tabindex="-1" aria-labelledby="bistroLabel" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -1570,16 +1738,16 @@
                 <div id="carouselbistro" class="carousel slide carousel-fade">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="images/bistro/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                      <img src="images/bistro/r.webp" class="d-block w-100 vh-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/bistro/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                      <img src="images/bistro/r1.webp" class="d-block w-100 vh-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/bistro/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                      <img src="images/bistro/r2.webp" class="d-block w-100 vh-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/bistro/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                      <img src="images/bistro/r3.webp" class="d-block w-100 vh-100" alt="...">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselbistro" data-bs-slide="prev">
@@ -1615,16 +1783,26 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r8.png" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r8.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>Nereo</h6>
               <div class="star-rating">★★★★★</div>
               <p>Los visitantes destacan la calidad de los platos, la atención al detalle y el ambiente acogedor.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#nereoModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#nereoModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
               <div class="modal fade" id="nereoModal" tabindex="-1" aria-labelledby="nereoLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -1638,16 +1816,16 @@
                       <div id="carouselnereo" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/nereo/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/nereo/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/nereo/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/nereo/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/nereo/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/nereo/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/nereo/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/nereo/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselnereo" data-bs-slide="prev">
@@ -1685,17 +1863,27 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r9.png" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r9.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>El Parrillaje Juárez</h6>
               <div class="star-rating">★★★★★</div>
               <p>Es un restaurante especializado en cortes de carne, pescados y mariscos de alta calidad ubicado en Puebla, México.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#pJuarezModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#nereoModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
             <div class="modal fade" id="pJuarezModal" tabindex="-1" aria-labelledby="pJuarezLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1709,16 +1897,16 @@
                     <div id="carouselpJuarez" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/parrillaje J/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/parrillaje J/r.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/parrillaje J/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/parrillaje J/r1.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/parrillaje J/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/parrillaje J/r2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/parrillaje J/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/parrillaje J/r3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselpJuarez" data-bs-slide="prev">
@@ -1756,16 +1944,26 @@
                 </div>
               </div>
             </div>
-          </div>
-          </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/r10.webp" class="img-fluid me-4" alt="">
-            <div>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/r10.webp" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+          <div>
               <h6>La Estancia Argentina - Angelopolis</h6>
               <div class="star-rating">★★★★★</div>
               <p>Este establecimiento se destaca por su especialidad en cortes de carne premium y su gastronomía argentina.</p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#estanAModal">Ver detalles</button>
+              </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#nereoModal">Ver detalles</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
               <div class="modal fade" id="estanAModal" tabindex="-1" aria-labelledby="estanALabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -1779,16 +1977,16 @@
                       <div id="carouselestanA" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/estancia argentina/r.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/estancia argentina/r.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/estancia argentina/r1.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/estancia argentina/r1.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/estancia argentina/r2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/estancia argentina/r2.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/estancia argentina/r3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/estancia argentina/r3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselestanA" data-bs-slide="prev">
@@ -1826,9 +2024,6 @@
               </div>
             </div>
 
-          </div>
-        </div>
-
 
       <br><br>
       
@@ -1855,8 +2050,10 @@
         </div>
       </section>
 
-  <div class="text-end mt-2 subir">
-    <a href="#" class="btn btn-link"><button class="btn btn-primary" type="submit" style="border-color: white; color: white;">Regresar</button></a>
+  <div id="btnSubir" class="d-none position-fixed bottom-0 end-0 m-3 z-3">
+    <a href="#" class="btn btn-primary rounded-circle p-2">
+      <i class="bi bi-arrow-up-circle-fill fs-5"></i>
+    </a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

@@ -27,13 +27,15 @@
 
 <body>
    
-  <div class="logo img-fluid" style="text-align: left;">
-        <a href="index.html"><img src="images/tupuebla.jpeg" alt="Logo Puebla"></a>
-      </div>
+  <div class="logo text-center text-lg-start ps-lg-5">
+  <a href="index.html">
+    <img src="images/tupuebla.jpeg" alt="Logo Puebla" class="img-fluid">
+  </a>
+</div>
       
     <header>
         <div class="container py-3">
-            <nav class="navbar navbar-expand-lg navbar dark" >
+            <nav class="navbar navbar-expand-lg navbar-dark" >
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,11 +62,11 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link active" href="#contacto">Contacto</a>
                       </li>
                     </ul>
                     <button id="btnSearch" class="btn btn-light">
-                      <i class="fas fa-search"></i>
+                      <i class="bi bi-search"></i>
                       </button>
                   </div>
                 </div>
@@ -73,12 +75,12 @@
     </header>
 
     <div id="cont-bars-search">
-      <div class="container">
-        <input type="text" id="inputSearch" class="form-control form-control-lg rounded-pill" placeholder="Buscar...">
-      </div>
+    <div class="container">
+      <input type="text" id="inputSearch" class="form-control form-control-lg rounded-pill" placeholder="Buscar...">
     </div>
+  </div>
     
-    <ul id="box-search" class="list-group"  style="top: 170px;; max-width: 800px; width: 90%">
+    <ul id="box-search" class="list-group rounded-sm"  style="top: 170px;; max-width: 800px; width: 90%">
       <li class="list-group-item"><a href="h.html"><i class="fas fa-search me-2"></i>Hoteles</a></li>
       <li class="list-group-item"><a href="m.html"><i class="fas fa-search me-2"></i>Mercados artesanales</a></li>
       <li class="list-group-item"><a href="z.html"><i class="fas fa-search me-2"></i>Zonas turísticas</a></li>
@@ -92,49 +94,60 @@
     
     <h1 class="m-0 p-0">Hoteles</h1>
 
-    <nav class="m-0 p-0" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-      <ol class="breadcrumb m-0 p-0">
-        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Hoteles</li>
-      </ol>
-    </nav>
-
-
-    <section class="container my-1">
-      <div class="row align-items-center">
-        
-        <div class="col-md-3 mb-4 mb-md-0">
-          <p style="color: black; font-family: Dancing Script, cursive; font-weight: 900; font-size: 20px;">
-          Puebla cuenta con una gran variedad de hoteles que van desde lujosos establecimientos de cinco estrellas hasta opciones más accesibles y acogedoras. Hoteles como Quinta Real, ubicado en un antiguo convento del siglo XVI, y el elegante Banyan Tree Puebla, fusionan el encanto colonial con comodidades modernas. Además, en el centro histórico y zonas cercanas, hay hoteles boutique que permiten disfrutar de una estancia auténtica y con gran cercanía a los principales atractivos turísticos.
-          </p>
-        </div>
     
-        <div class="col-md-9">
-          <div id="carouselHoteles" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner rounded-4 overflow-hidden shadow">
-              <div class="carousel-item active">
-                <img src="images/hoteles/h4.jpg" class="d-block w-100" alt="Hotel 1" style="height: 400px; object-fit: cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="images/hoteles/hotel1.png" class="d-block w-100" alt="Hotel 2" style="height: 400px; object-fit: cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="images/hoteles/h5.jpg" class="d-block w-100" alt="Hotel 3" style="height: 400px; object-fit: cover;">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHoteles" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselHoteles" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+    <nav class="m-1 p-0" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ol class="breadcrumb m-0 p-2 p-md-0">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Hoteles</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+    <section class="container my-4">
+  <div class="row align-items-center">
+    
+    <!-- Texto -->
+    <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <p style="color: black; font-family: 'Dancing Script', cursive; font-weight: 900; font-size: 20px;">
+        Puebla cuenta con una gran variedad de hoteles que van desde lujosos establecimientos de cinco estrellas hasta opciones más accesibles y acogedoras. Hoteles como Quinta Real, ubicado en un antiguo convento del siglo XVI, y el elegante Banyan Tree Puebla, fusionan el encanto colonial con comodidades modernas. Además, en el centro histórico y zonas cercanas, hay hoteles boutique que permiten disfrutar de una estancia auténtica y con gran cercanía a los principales atractivos turísticos.
+      </p>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="col-12 col-md-6">
+      <div id="carouselHoteles" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4 overflow-hidden shadow">
+          <div class="carousel-item active">
+            <img src="images/hoteles/h4.jpg" class="d-block w-100 hotel-img" alt="Hotel 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/hoteles/hotel1.png" class="d-block w-100 hotel-img" alt="Hotel 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/hoteles/h5.jpg" class="d-block w-100 hotel-img" alt="Hotel 3">
           </div>
         </div>
-    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHoteles" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHoteles" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-    </section>    
+    </div>
+
+  </div>
+</section>
+
     
       <div class="section-title" id="zonasb">Más buscado</div>
       <div class="zona-container position-relative">
@@ -145,7 +158,7 @@
             <div class="card-body d-flex flex-column">
               <h6>Hotel 5 de Mayo</h6>
               <p>En el Hotel 5 de Mayo, podrá encontrar calidad, confort y un excelente servicio, listos para crear una experiencia inolvidable.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#H5Modal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#H5Modal">Ver Más</a>
               <div class="modal fade" id="H5Modal" tabindex="-1" aria-labelledby="H5fLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -159,16 +172,16 @@
                       <div id="carouselH5" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/H5/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/H5/h.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/H5/h1.avif" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/H5/h1.avif" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/H5/h2.avif" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/H5/h2.avif" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/H5/h3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/H5/h3.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselH5" data-bs-slide="prev">
@@ -192,6 +205,9 @@
                           <div class="mt-3">
                             <p><strong>Ubicación:</strong> Blvd. Héroes del 5 de Mayo 404, Barrio de Xanenetla, 72290 Heroica Puebla de Zaragoza, Pue.</p>
                             <p><strong>Horario:</strong> Recepción abierta las 24 horas.</p>
+                            <a href="https://www.booking.com/hotel/mx/5-de-mayo-heroica-puebla-de-zaragoza.es.html?aid=2405612&label=brave_nonbrand_hotel_mx_5cc55163-65d7-4c30-8a1d-be3a1f275f3e_236bb1&sid=433814778edf733593435142f4ddd9a6&dest_id=-1690063&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747545069&srpvid=893e24747040029d&type=total&ucfs=1&" target="_blank" class="btn btn-primary mt-2">
+                            <i class="bi bi-globe"></i> Sitio oficial
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -213,7 +229,7 @@
             <div class="card-body d-flex flex-column">
               <h6>Hotel Boutique Casareyna</h6>
               <p>CASAREYNA se caracteriza en el esmero en la atención personalizada, el cuidado a todos y cada uno de los detalles y un servicio cálido y profesional a través de un equipo de personas donde nuestra única misión es su satisfacción total.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#hCRModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#hCRModal">Ver Más</a>
               <div class="modal fade" id="hCRModal" tabindex="-1" aria-labelledby="hCRLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -227,16 +243,16 @@
                       <div id="carouselhCR" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/hCR/r.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hCR/r.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hCR/r1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hCR/r1.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hCR/r2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hCR/r2.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hCR/r3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hCR/r3.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselhCR" data-bs-slide="prev">
@@ -281,7 +297,7 @@
             <div class="card-body d-flex flex-column">
               <h6>Hotel Sofia</h6>
               <p>Hotel Sofia cuenta con un salón compartido, terraza, un restaurante y bar en Puebla.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#hSofiaModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#hSofiaModal">Ver Más</a>
               <div class="modal fade" id="hSofiaModal" tabindex="-1" aria-labelledby="hSofiaLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -295,16 +311,16 @@
                       <div id="carouselhSofia" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/hotel sofia/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hotel sofia/h.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel sofia/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hotel sofia/h1.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel sofia/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hotel sofia/h2.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel sofia/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hotel sofia/h3.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselhSofia" data-bs-slide="prev">
@@ -349,7 +365,7 @@
             <div class="card-body d-flex flex-column">
               <h6>Hotel Diana</h6>
               <p>Convenientemente ubicado en Puebla, Hotel Diana tiene habitaciones climatizadas, una terraza, WiFi gratis y un restaurante.</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#hDianaModal">Ver Más</a>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#hDianaModal">Ver Más</a>
               <div class="modal fade" id="hDianaModal" tabindex="-1" aria-labelledby="hDianaLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -363,16 +379,16 @@
                       <div id="carouselhDiana" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/hotel diana/h.avif" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hotel diana/h.avif" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel diana/h1.avif" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hotel diana/h1.avif" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel diana/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hotel diana/h2.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel diana/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hotel diana/h3.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselhDiana" data-bs-slide="prev">
@@ -416,8 +432,8 @@
             <img src="images/hotel el descanso/h.webp" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
               <h6>Hotel el Descanso Puebla Barrio del artista</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni nostrum nihil iusto repellendus perspiciatis quia, quisquam tempore ea commodi numquam ullam cum, quo aspernatur voluptatum ipsum dicta ratione in?</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#hDescModal">Ver Más</a>
+              <p>Hotel con una atmósfera tranquila, ideal para relajarte en el corazón del centro histórico de Puebla, junto al emblemático Barrio del Artista.</p>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#hDescModal">Ver Más</a>
               <div class="modal fade" id="hDescModal" tabindex="-1" aria-labelledby="hDescLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -431,16 +447,16 @@
                       <div id="carouselhDesc" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/hotel el descanso/h1.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hotel el descanso/h1.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel el descanso/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hotel el descanso/h2.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel el descanso/h3.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hotel el descanso/h3.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel el descanso/h4.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hotel el descanso/h4.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselhDesc" data-bs-slide="prev">
@@ -457,7 +473,7 @@
                       <div class="row mt-4">
                         <div class="col-md-6">
                           <h5>Descripción:</h5>
-                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, earum qui quia ratione est eligendi, quidem illo dolore nostrum, reprehenderit asperiores sequi! Numquam quam incidunt quos assumenda quibusdam facere eius?</p>
+                          <p>El Hotel el Descanso ofrece una estancia placentera en una ubicación privilegiada para los amantes del arte y la cultura. Con habitaciones cómodas y una atención cálida, es una excelente opción para quienes desean recorrer a pie las atracciones turísticas más importantes del centro histórico. Su cercanía al Barrio del Artista lo hace perfecto para disfrutar del arte local, galerías, cafés bohemios y más.</p>
                         </div>
                         <div class="col-md-6">
                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.434911736596!2d-98.1932404!3d19.044606599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc16ea98d185d%3A0x44268d9c4fb72ef7!2sHotel%20el%20Descanso%20Puebla%20Barrio%20del%20artista!5e0!3m2!1ses-419!2smx!4v1746336597931!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -485,8 +501,8 @@
             <img src="images/hotel gamma/h.webp" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
               <h6>Gamma Puebla Señorial Centro</h6>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor sapiente modi, labore non...</p>
-              <a href="#" class="btn btn-primary mt-auto" id="ver" data-bs-toggle="modal" data-bs-target="#hGammaModal">Ver Más</a>
+              <p>Comodidad, elegancia y una ubicación céntrica. Ideal para viajes de negocio o placer en Puebla.</p>
+              <a href="#" class="btn btn-primary mt-auto ver" data-bs-toggle="modal" data-bs-target="#hGammaModal">Ver Más</a>
               <div class="modal fade" id="hGammaModal" tabindex="-1" aria-labelledby="hGammaLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
@@ -500,16 +516,16 @@
                       <div id="carouselhGamma" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="images/hotel gamma/h1.avif" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hotel gamma/h1.avif" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel gamma/h2.avif" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hotel gamma/h2.avif" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel gamma/h3.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                            <img src="images/hotel gamma/h3.jpg" class="d-block w-100 vh-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="images/hotel gamma/h4.webp" class="d-block w-100" style="height: 450px" alt="...">
+                            <img src="images/hotel gamma/h4.webp" class="d-block w-100 vh-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselhGamma" data-bs-slide="prev">
@@ -526,7 +542,7 @@
                       <div class="row mt-4">
                         <div class="col-md-6">
                           <h5>Descripción:</h5>
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint repellat enim unde corrupti libero voluptatem ad culpa cupiditate, ut amet sapiente molestiae et dolorum odit natus dolores consequuntur minus maxime!</p>
+                          <p>Gamma Puebla Señorial Centro combina tradición y modernidad para ofrecerte una experiencia de alojamiento excepcional. Situado en el corazón del centro histórico, este hotel cuenta con habitaciones amplias, restaurante, centro de negocios y gimnasio. Su estilo señorial y su ambiente acogedor lo convierten en una excelente elección para quienes buscan confort y una ubicación estratégica para explorar la ciudad.</p>
                         </div>
                         <div class="col-md-6">
                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4351171719754!2d-98.19966982640013!3d19.044597558880206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e69e38ffdf%3A0x23afb483f6c0db5!2sGamma%20Puebla%20Se%C3%B1orial%20Centro!5e0!3m2!1ses-419!2smx!4v1746337067229!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -553,15 +569,28 @@
   
       <div class="section-title" id="zonasr">5 estrellas</div>
       <br><br>
-      <div class="row g-5">
-        <div class="col-md-12 d-flex recom">
-          <img src="images/hoteles/quinta-real.png" class="img-fluid me-4" alt="">
-          <div>
+      <div class="container py-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+            <img src="images/hoteles/quinta-real.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
+            <div>
             <h6>Quinta Real</h6>
             <div class="star-rating mb-1">★★★★★</div>
             <p>Hotel de excelente. Muy buenas habitaciones en excelentes ubicación. Piscina fabulosa y ambiente estupendo.</p>
-            <p><strong>Precio: $1,544 por noche, 1 habitacion</strong></p>
-            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#HQModal">Ver detalles</button>
+            <p><strong>Precio: $1,544 por noche, 1 habitación</strong></p>
+            </div>
+
+            <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#HQModal">Ver detalles</button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
             <div class="modal fade" id="HQModal" tabindex="-1" aria-labelledby="HQLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -575,16 +604,16 @@
                     <div id="carouselHQ" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/HQ/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/HQ/h.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/HQ/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/HQ/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/HQ/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/HQ/h2.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/HQ/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/HQ/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselHQ" data-bs-slide="prev">
@@ -608,6 +637,9 @@
                         <div class="mt-3">
                           <p><strong>Ubicación:</strong> Av 7 Pte 103, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
                           <p><strong>Horario:</strong> Recepción abierta las 24 horas.</p>
+                          <a href="https://www.booking.com/hotel/mx/camino-real-puebla-centro-puebla-centro.es.html?aid=2405612&label=brave_nonbrand_hotel_mx_d96dca50-e8e4-450a-a994-e61a53fe016e_d6f178&sid=433814778edf733593435142f4ddd9a6&dest_id=-1690063&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747544945&srpvid=6f0a2430defd0315&type=total&ucfs=1&" target="_blank" class="btn btn-primary mt-2">
+                            <i class="bi bi-globe"></i> Sitio oficial
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -622,17 +654,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/cartesiano.png" class="img-fluid me-4" alt="">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/cartesiano.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100">
             <div>
               <h6>Cartesiano Boutique y Wellness Hotel</h6>
               <div class="star-rating mb-1">★★★★★</div>
               <p>Hotel de excelente. Muy buenas habitaciones en excelentes ubicación. Piscina fabulosa y ambiente estupendo.</p>
               <p><strong>Precio: $2,665 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#cBouModal">Ver detalles</button>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#cBouModal">Ver detalles</button>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
             <div class="modal fade" id="cBouModal" tabindex="-1" aria-labelledby="cBouLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -642,20 +684,19 @@
                   </div>
                   <div class="modal-body">
             
-            
                     <div id="carouselcBou" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/cartesiano boutique/h.avif" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/cartesiano boutique/h.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/cartesiano boutique/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/cartesiano boutique/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/cartesiano boutique/h2.avif" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/cartesiano boutique/h2.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/cartesiano boutique/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/cartesiano boutique/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselcBou" data-bs-slide="prev">
@@ -693,22 +734,32 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/julio-hotel.png" class="img-fluid me-4" alt="">
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/julio-hotel.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100 h-100">
             <div>
               <h6>Palacio Julio Hotel</h6>
               <div class="star-rating mb-1">★★★★★</div>
               <p>Hotel romantico genial y con acceso a aparcamientos.</p>
               <p><strong>Precio: $2,424 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#pJulioModal">Ver detalles</button>
+              </div>
+              <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#pJulioModal">Ver detalles</button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+               
             <div class="modal fade" id="pJulioModal" tabindex="-1" aria-labelledby="pJulioLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h2 class="modal-title" id="museoAlf">Palacio Julio Hotel</h2>
+                    <h2 class="modal-title" id="pJulio">Palacio Julio Hotel</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                   </div>
                   <div class="modal-body">
@@ -717,16 +768,16 @@
                     <div id="carouselpJulio" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/palacio julio h/h.avif" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/palacio julio h/h.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/palacio julio h/h1.jpeg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/palacio julio h/h1.jpeg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/palacio julio h/h2.avif" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/palacio julio h/h2.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/palacio julio h/h3.jpeg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/palacio julio h/h3.jpeg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselpJulio" data-bs-slide="prev">
@@ -764,17 +815,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/el-sueño.png" class="img-fluid me-4" alt="">
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/el-sueño.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100 h-100">
             <div>
               <h6>Hotel El Sueño</h6>
               <div class="star-rating mb-1">★★★★★</div>
               <p>Hotel wellness con excelente servicio, ambiente perfecto y magnífica ubicación.</p>
               <p><strong>Precio: $3,180 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hSueñoModal">Ver detalles</button>
+              </div>
+              <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hSueñoModal">Ver detalles</button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
             <div class="modal fade" id="hSueñoModal" tabindex="-1" aria-labelledby="hSueñoLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -788,16 +849,16 @@
                     <div id="carouselhSueño" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel el sueño/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel el sueño/h.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel el sueño/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel el sueño/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel el sueño/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel el sueño/h2.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel el sueño/h3.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel el sueño/h3.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhSueño" data-bs-slide="prev">
@@ -835,17 +896,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/santo-cristo.png" class="img-fluid me-4" alt="">
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/santo-cristo.png" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+    
+          <div class="d-flex flex-column justify-content-between w-100 h-100">
             <div>
               <h6>Hacienda Santo Cristo</h6>
               <div class="star-rating mb-1">★★★★★</div>
               <p>Hotel de lujo y comida excelente.</p>
               <p><strong>Precio: $1,765 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hCristoModal">Ver detalles</button>
+              </div>
+              <div class="text-end">
+            <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hCristoModal">Ver detalles</button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
             <div class="modal fade" id="hCristoModal" tabindex="-1" aria-labelledby="hCristoLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -859,16 +930,16 @@
                     <div id="carouselhCristo" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel santo cristo/h.avif" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel santo cristo/h.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel santo cristo/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel santo cristo/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel santo cristo/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel santo cristo/h2.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel santo cristo/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel santo cristo/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhCristo" data-bs-slide="prev">
@@ -907,23 +978,32 @@
               </div>
             </div>
           </div>
-        </div>
-
-        </div>
   
       <br><br>
 
       <div class="section-title" id="4e">4 estrellas</div>
       <br><br>
-      <div class="row g-5">
-        <div class="col-md-12 d-flex recom">
-          <img src="images/hoteles/fiesta-inn-explanada.jpg" class="img-fluid me-4" alt="">
-          <div>
-            <h6>Fiesta Inn Express Puebla Explanada</h6>
-            <div class="star-rating mb-1">★★★★★</div>
-            <p>Las unidades del alojamiento están equipadas con TV de pantalla plana y artículos de aseo gratuitos. En el hotel se sirve un desayuno buffet. En recepción se hablan varios idiomas, como inglés y español, y el personal ofrece consejos sobre la zona.</p>
-            <p><strong>Precio: $1,471 por noche, 1 habitacion</strong></p>
-            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#FiestaModal">Ver detalles</button>
+      <div class="container py-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/fiesta-inn-explanada.jpg" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+    <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>Fiesta Inn Express Puebla Explanada</h6>
+        <div class="star-rating mb-1">★★★★</div>
+        <p>Las unidades del alojamiento están equipadas con TV de pantalla plana y artículos de aseo gratuitos. En el hotel se sirve un desayuno buffet. En recepción se hablan varios idiomas, como inglés y español, y el personal ofrece consejos sobre la zona.</p>
+        <p><strong>Precio: $1,471 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#FiestaModal">Ver detalles</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
             <div class="modal fade" id="FiestaModal" tabindex="-1" aria-labelledby="FiestaLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -937,16 +1017,16 @@
                     <div id="carouselFiesta" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/fiesta/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/fiesta/h.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/fiesta/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/fiesta/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/fiesta/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/fiesta/h2.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/fiesta/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/fiesta/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselFiesta" data-bs-slide="prev">
@@ -970,6 +1050,9 @@
                         <div class="mt-3">
                           <p><strong>Ubicación:</strong>Anillo Perif. Ecológico, Santiago Momoxpan, Alvaro Obregón, 72774 San Francisco Ocotlán, Pue.</p>
                           <p><strong>Horario:</strong> Recepción abierta las 24 horas.</p>
+                          <a href="https://www.booking.com/hotel/mx/fiesta-inn-express-puebla-explanada.es.html?aid=2405612&label=brave_nonbrand_hotel_mx_5cc55163-65d7-4c30-8a1d-be3a1f275f3e_236bb1&sid=433814778edf733593435142f4ddd9a6&dest_id=-1690063&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=25&hpos=25&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747545227&srpvid=893e24747040029d&type=total&ucfs=1&" target="_blank" class="btn btn-primary mt-2">
+                            <i class="bi bi-globe"></i> Sitio oficial
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -984,17 +1067,27 @@
                 </div>
               </div>
             </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/four-points.jpeg" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+      <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>Four Points by Sheraton Puebla</h6>
+        <div class="star-rating mb-1">★★★★</div>
+        <p>En el hotel se puede disfrutar de un desayuno buffet. La clientela puede practicar actividades en Puebla y alrededores, como ciclismo.</p>
+        <p><strong>Precio: $1,091 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hSherModal">Ver detalles</button>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/four-points.jpeg" class="img-fluid me-4" alt="">
-            <div>
-              <h6>Four Points by Sheraton Puebla</h6>
-              <div class="star-rating mb-1">★★★★★</div>
-              <p>En el hotel se puede disfrutar de un desayuno buffet. La clientela puede practicar actividades en Puebla y alrededores, como ciclismo.</p>
-              <p><strong>Precio: $1,091 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hSherModal">Ver detalles</button>
             <div class="modal fade" id="hSherModal" tabindex="-1" aria-labelledby="hSherLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1008,16 +1101,16 @@
                     <div id="carouselhSher" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel four points/h.webp" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel four points/h.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel four points/h1.avif" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel four points/h1.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel four points/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel four points/h2.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel four points/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel four points/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhSher" data-bs-slide="prev">
@@ -1055,17 +1148,27 @@
                 </div>
               </div>
             </div>
+
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/hilton-garden.jpeg" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+    <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>Hilton Garden Inn Puebla Angelopolis</h6>
+        <div class="star-rating mb-1">★★★★</div>
+        <p>Los huéspedes podrán degustar platos de marisco en el Hotel Restaurante Villa Rica. El personal de recepción está disponible las 24 horas del día.</p>
+        <p><strong>Precio: $1,062 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hiltonModal">Ver detalles</button>
           </div>
         </div>
+      </div>
+    </div>
+    </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/hilton-garden.jpeg" class="img-fluid me-4" alt="">
-            <div>
-              <h6>Hilton Garden Inn Puebla Angelopolis</h6>
-              <div class="star-rating mb-1">★★★★★</div>
-              <p>Los huéspedes podrán degustar platos de marisco en el Hotel Restaurante Villa Rica. El personal de recepción está disponible las 24 horas del día.</p>
-              <p><strong>Precio: $1,062 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hiltonModal">Ver detalles</button>
             <div class="modal fade" id="hiltonModal" tabindex="-1" aria-labelledby="hiltonLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1079,16 +1182,16 @@
                     <div id="carouselhilton" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel hilton/h.avif" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel hilton/h.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel hilton/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel hilton/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel hilton/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel hilton/h2.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel hilton/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel hilton/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhilton" data-bs-slide="prev">
@@ -1126,17 +1229,26 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/ramada-encore.jpg" class="img-fluid me-4" alt="">
-            <div>
-              <h6>Ramada Encore by Wyndham Puebla</h6>
-              <div class="star-rating mb-1">★★★★★</div>
-              <p>Todas las habitaciones disponen de TV de pantalla plana. Hay cafetera en la habitación. Las habitaciones disponen de baño privado. Se proporcionan artículos de aseo gratuitos y secador de pelo. La Ramada Encore Puebla Mexico dispone de WiFi gratuita en todas las instalaciones.</p>
-              <p><strong>Precio: $1,068.30 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hRamadaModal">Ver detalles</button>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/ramada-encore.jpg" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+      <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>Ramada Encore by Wyndham Puebla</h6>
+        <div class="star-rating mb-1">★★★★</div>
+        <p>Todas las habitaciones disponen de TV de pantalla plana. Hay cafetera en la habitación. Las habitaciones disponen de baño privado. Se proporcionan artículos de aseo gratuitos y secador de pelo. La Ramada Encore Puebla Mexico dispone de WiFi gratuita en todas las instalaciones.</p>
+        <p><strong>Precio: $1,068.30 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hRamadaModal">Ver detalles</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
             <div class="modal fade" id="hRamadaModal" tabindex="-1" aria-labelledby="hRamadaLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1150,16 +1262,16 @@
                     <div id="carouselhRamada" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel ramada/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel ramada/h.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel ramada/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel ramada/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel ramada/h2.webp" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel ramada/h2.webp" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel ramada/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel ramada/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhRamada" data-bs-slide="prev">
@@ -1197,17 +1309,26 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/JF-grand.jpg" class="img-fluid me-4" alt="">
-            <div>
-              <h6>JF Grand Puebla</h6>
-              <div class="star-rating mb-1">★★★★★</div>
-              <p>Las habitaciones incluyen aire acondicionado, TV de pantalla plana, caja fuerte, escritorio y baño completo con artículos de aseo gratuitos. El establecimiento alberga un restaurante de cocina internacional e instalaciones para reuniones con capacidad para un máximo de 150 personas. A solo 5 minutos a pie del hotel hay una gran variedad de restaurantes locales.</p>
-              <p><strong>Precio: $1,203.50 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hJFModal">Ver detalles</button>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/JF-grand.jpg" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+      <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>JF Grand Puebla</h6>
+        <div class="star-rating mb-1">★★★★</div>
+        <p>Las habitaciones incluyen aire acondicionado, TV de pantalla plana, caja fuerte, escritorio y baño completo con artículos de aseo gratuitos. El establecimiento alberga un restaurante de cocina internacional e instalaciones para reuniones con capacidad para un máximo de 150 personas. A solo 5 minutos a pie del hotel hay una gran variedad de restaurantes locales.</p>
+        <p><strong>Precio: $1,203.50 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hJFModal">Ver detalles</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
             <div class="modal fade" id="hJFModal" tabindex="-1" aria-labelledby="hJFLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1221,16 +1342,16 @@
                     <div id="carouselhJF" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel JF/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel JF/h.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel JF/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel JF/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel JF/h2.avif" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel JF/h2.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel JF/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel JF/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhJF" data-bs-slide="prev">
@@ -1269,23 +1390,31 @@
               </div>
             </div>
           </div>
-        </div>
-
-        </div>
 
       <br><br>
 
       <div class="section-title" id="3e">3 estrellas</div>
       <br><br>
-      <div class="row g-5">
-        <div class="col-md-12 d-flex recom">
-          <img src="images/hoteles/hampton-Inn.jpg" class="img-fluid me-4" alt="">
-          <div>
-            <h6>Hampton Inn & Suites By Hilton Puebla</h6>
-            <div class="star-rating mb-1">★★★★★</div>
-            <p>Ofrece alojamiento con salón de uso común, parking privado gratis, terraza y bar. Este hotel de 3 estrellas tiene wifi gratis, recepción 24 horas y mostrador de información turística.</p>
-            <p><strong>Precio: $935 por noche, 1 habitacion</strong></p>
-            <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hInnModal">Ver detalles</button>
+      <div class="container py-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/hampton-Inn.jpg" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+    <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>Hampton Inn & Suites By Hilton Puebla</h6>
+        <div class="star-rating mb-1">★★★</div>
+        <p>Ofrece alojamiento con salón de uso común, parking privado gratis, terraza y bar. Este hotel de 3 estrellas tiene wifi gratis, recepción 24 horas y mostrador de información turística.</p>
+        <p><strong>Precio: $935 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hInnModal">Ver detalles</button>
+      </div>
+    </div>
+    </div>
+  </div>
+ </div>
             <div class="modal fade" id="hInnModal" tabindex="-1" aria-labelledby="hInnLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1299,16 +1428,16 @@
                     <div id="carouselhInn" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel Hampton/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel Hampton/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel Hampton/h.avif" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel Hampton/h.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel Hampton/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel Hampton/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel Hampton/h2.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel Hampton/h2.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhInn" data-bs-slide="prev">
@@ -1332,6 +1461,9 @@
                         <div class="mt-3">
                           <p><strong>Ubicación:</strong> Av Osa Menor 4-2do, Reserva Territorial A, 72830 San Andrés Cholula, Pue.</p>
                           <p><strong>Horario:</strong> Recepción abierta las 24 horas.</p>
+                          <a href="https://www.booking.com/hotel/mx/hampton-inn-suites-by-hilton-puebla.es.html?aid=2425903&label=bra115jc-1FCAsooAFCI2hhbXB0b24taW5uLXN1aXRlcy1ieS1oaWx0b24tcHVlYmxhSFJYA2igAYgBAZgBCrgBF8gBDNgBAegBAfgBDIgCAagCA7gCjNqlwQbAAgHSAiQ1ZTgwZjliNy1mN2MyLTRhYjEtOWE1Yi0xZThjODUzZTY4Y2LYAgbgAgE&sid=433814778edf733593435142f4ddd9a6&dest_id=-1690063&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747545360&srpvid=797d250604c002f4&type=total&ucfs=1&" target="_blank" class="btn btn-primary mt-2">
+                            <i class="bi bi-globe"></i> Sitio oficial
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -1346,17 +1478,26 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/one-puebla-serdan.webp" class="img-fluid me-4" alt="">
-            <div>
-              <h6>One Puebla Serdan</h6>
-              <div class="star-rating mb-1">★★★★★</div>
-              <p>En el hotel, todas las habitaciones incluyen escritorio y TV de pantalla plana. En One Puebla Serdan, cada habitación dispone de ropa de cama y toallas.</p>
-              <p><strong>Precio: $986.85 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hOneModal">Ver detalles</button>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/one-puebla-serdan.webp" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+    <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>One Puebla Serdan</h6>
+        <div class="star-rating mb-1">★★★</div>
+        <p>En el hotel, todas las habitaciones incluyen escritorio y TV de pantalla plana. En One Puebla Serdan, cada habitación dispone de ropa de cama y toallas.</p>
+        <p><strong>Precio: $986.85 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hOneModal">Ver detalles</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
             <div class="modal fade" id="hOneModal" tabindex="-1" aria-labelledby="hOneLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1370,16 +1511,16 @@
                     <div id="carouselhOne" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel one puebla/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel one puebla/h.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel one puebla/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel one puebla/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel one puebla/h2.avif" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel one puebla/h2.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel one puebla/h3.avif" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel one puebla/h3.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhOne" data-bs-slide="prev">
@@ -1417,18 +1558,27 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/hotel-nube.jpg" class="img-fluid me-4" alt="">
-            <div>
-              <h6>Hotel Nube, Puebla Centro</h6>
-              <div class="star-rating mb-1">★★★★★</div>
-              <p>Hotel Nube, Puebla Centro es un alojamiento muy bien situado en Puebla que ofrece centro de fitness, wifi gratis, terraza y habitaciones con aire acondicionado.</p>
-              <p><strong>Precio: $777.47 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hNubeModal">Ver detalles</button>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/hotel-nube.jpg" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+    <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>Hotel Nube, Puebla Centro</h6>
+        <div class="star-rating mb-1">★★★</div>
+        <p>Hotel Nube, Puebla Centro es un alojamiento muy bien situado en Puebla que ofrece centro de fitness, wifi gratis, terraza y habitaciones con aire acondicionado.</p>
+        <p><strong>Precio: $777.47 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hNubeModal">Ver detalles</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
             <div class="modal fade" id="hNubeModal" tabindex="-1" aria-labelledby="hNubeLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1442,16 +1592,16 @@
                     <div id="carouselhNube" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel nube/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel nube/h.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel nube/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel nube/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel nube/h2.avif" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel nube/h2.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel nube/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel nube/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhNube" data-bs-slide="prev">
@@ -1489,17 +1639,26 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/margarita-hotel.jpg" class="img-fluid me-4" alt="">
-            <div>
-              <h6>Hotel Margarita</h6>
-              <div class="star-rating mb-2">★★★★★</div>
-              <p>Es un alojamiento muy bien situado en el centro de Puebla que ofrece wifi gratis, restaurante y parking privado gratis. Este hotel de 3 estrellas ofrece servicio de habitaciones y recepción 24 horas. Hay bar. En el hotel, cada habitación está equipada con escritorio, TV de pantalla plana, baño privado, ropa de cama y toallas. Las habitaciones incluyen armario. El desayuno está disponible e incluye opciones a la carta, continentales o americanas.</p>
-              <p><strong>Precio: $777.47 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hMarModal">Ver detalles</button>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/margarita-hotel.jpg" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+    <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>Hotel Margarita</h6>
+        <div class="star-rating mb-2">★★★</div>
+        <p>Es un alojamiento muy bien situado en el centro de Puebla que ofrece wifi gratis, restaurante y parking privado gratis. Este hotel de 3 estrellas ofrece servicio de habitaciones y recepción 24 horas. Hay bar. En el hotel, cada habitación está equipada con escritorio, TV de pantalla plana, baño privado, ropa de cama y toallas. Las habitaciones incluyen armario. El desayuno está disponible e incluye opciones a la carta, continentales o americanas.</p>
+        <p><strong>Precio: $777.47 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hMarModal">Ver detalles</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
             <div class="modal fade" id="hMarModal" tabindex="-1" aria-labelledby="hMarLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1513,16 +1672,16 @@
                     <div id="carouselhMar" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel margarita/h.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel margarita/h.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel margarita/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel margarita/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel margarita/h2.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel margarita/h2.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel margarita/h3.jpg" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel margarita/h3.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhMar" data-bs-slide="prev">
@@ -1560,17 +1719,26 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-          <div class="col-md-12 d-flex recom">
-            <img src="images/hoteles/hotel-palace.avif" class="img-fluid me-4" alt="">
-            <div>
-              <h6>Hotel Palace Puebla</h6>
-              <div class="star-rating mb-1">★★★★★</div>
-              <p>El Hotel Palace Puebla ocupa un edificio típico en el centro histórico de Puebla y ofrece conexión Wi-Fi gratuita. Se encuentra a 200 metros de los lugares de interés más importantes, como la plaza principal y la catedral de Puebla.</p>
-              <p><strong>Precio: $532.80 por noche, 1 habitacion</strong></p>
-              <button class="btn-detalles" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#hPalModal">Ver detalles</button>
+          <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
+          <div class="recom d-flex flex-column flex-md-row">
+          <img src="images/hoteles/hotel-palace.avif" class="img-fluid me-md-4 mb-3 mb-md-0" alt="">
+
+    <div class="d-flex flex-column justify-content-between w-100 h-100">
+      <div>
+        <h6>Hotel Palace Puebla</h6>
+        <div class="star-rating mb-1">★★★</div>
+        <p>El Hotel Palace Puebla ocupa un edificio típico en el centro histórico de Puebla y ofrece conexión Wi-Fi gratuita. Se encuentra a 200 metros de los lugares de interés más importantes, como la plaza principal y la catedral de Puebla.</p>
+        <p><strong>Precio: $532.80 por noche, 1 habitacion</strong></p>
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary btn-detalles" data-bs-toggle="modal" data-bs-target="#hPalModal">Ver detalles</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
             <div class="modal fade" id="hPalModal" tabindex="-1" aria-labelledby="hPalLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -1584,16 +1752,16 @@
                     <div id="carouselhPal" class="carousel slide carousel-fade">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="images/hotel palace/h.avif" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel palace/h.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel palace/h1.jpg" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel palace/h1.jpg" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel palace/h2.avif" class="d-block w-100" style="height: 450px"alt="...">
+                          <img src="images/hotel palace/h2.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                          <img src="images/hotel palace/h3.avif" class="d-block w-100" style="height: 450px" alt="...">
+                          <img src="images/hotel palace/h3.avif" class="d-block w-100 vh-100" alt="...">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselhPal" data-bs-slide="prev">
@@ -1632,10 +1800,6 @@
               </div>
             </div>
           </div>
-        </div>
-
-          
-        </div>
 
       <br><br>
 
@@ -1663,9 +1827,11 @@
       </section>
 
 
-  <div class="text-end mt-2 subir">
-    <a href="#" class="btn btn-link"><button class="btn btn-primary" type="submit" style="border-color: white; color: white;">Regresar</button></a>
-  </div>
+  <div id="btnSubir" class="d-none position-fixed bottom-0 end-0 m-3 z-3">
+    <a href="#" class="btn btn-primary rounded-circle p-2">
+      <i class="bi bi-arrow-up-circle-fill fs-5"></i>
+    </a>
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>

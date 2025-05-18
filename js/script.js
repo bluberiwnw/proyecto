@@ -55,3 +55,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       
   });
+
+//Mostrar u ocultar boton para regresar
+  const btn = document.getElementById("btnSubir");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      btn.classList.remove("d-none"); // Muestra
+    } else {
+      btn.classList.add("d-none"); // Oculta
+    }
+  });
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll suave al inicio
+  });
+
